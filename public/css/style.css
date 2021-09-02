@@ -19,4 +19,27 @@ footer {
   background-color: #3a3b3c;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D3D3D3;
+}
+.location > i {
+  margin-right: 10px;
+}
+
+.description > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

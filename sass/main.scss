@@ -7,6 +7,13 @@
     src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
   }
 
+@mixin headerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 h5 {
     font: 20px "Shrikhand", sans-serif;
 }
@@ -16,4 +23,23 @@ body {
 footer {
     width: 100%;
     background-color: #3a3b3c;
+}
+
+.logo {
+    @include headerCenter;
+    padding: 10px;
+}
+.location {
+    @include headerCenter;
+    background-color: #D3D3D3;
+    >i{
+        margin-right: 10px;
+    }
+}
+
+.description {
+    >h1 {
+        @include headerCenter;
+    }
+
 }
