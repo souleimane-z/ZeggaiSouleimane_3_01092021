@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../fonts/Shrikhand/");
 }
 h5 {
   font: 20px "Shrikhand", sans-serif;
