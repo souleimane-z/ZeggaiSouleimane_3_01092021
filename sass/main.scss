@@ -25,7 +25,7 @@ footer {
     background-color: #3a3b3c;
 }
 
-.logo {
+.header__heading {
     @include headerCenter;
     padding: 10px;
 }
@@ -37,9 +37,17 @@ footer {
     }
 }
 
-.description {
+.quote {
     >h1 {
         @include headerCenter;
+    }
+    >h4 {
+        @include headerCenter;
+
+    }
+    >.exploreHeader{
+        @include headerCenter;
+
     }
 
 }
