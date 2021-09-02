@@ -1,15 +1,19 @@
 @font-face {
-	font-family: "Roboto";
-	src: url("fonts/Roboto/Roboto-Regular.ttf");
-}
-@font-face {
-	font-family: "Shrikhand";
-	src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
-}
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Shrikhand";
+    src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
+  }
 
 h5 {
     font: 20px "Shrikhand", sans-serif;
 }
 body {
   font: 15px "Roboto", sans-serif;
+}
+footer {
+    width: 100%;
+    background-color: #3a3b3c;
 }
