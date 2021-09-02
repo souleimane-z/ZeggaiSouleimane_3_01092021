@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ommande de repas en ligne",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souleimane-z/ZeggaiSouleimane_3_01092021.git"
+  },
+  "author": "Souleimane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souleimane-z/ZeggaiSouleimane_3_01092021/issues"
+  },
+  "homepage": "https://github.com/souleimane-z/ZeggaiSouleimane_3_01092021#readme"
+}
