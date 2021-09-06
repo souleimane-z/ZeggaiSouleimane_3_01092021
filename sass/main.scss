@@ -1,43 +1,9 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("../../fonts/Roboto/Roboto-Regular.ttf");
-  }
-  @font-face {
-    font-family: "Roboto-bold";
-    src: url("../../fonts/Roboto/Roboto-Bold.ttf");
-  }
-  @font-face {
-    font-family: "Roboto-Thin";
-    src: url("../../fonts/Roboto/Roboto-Thin.ttf");
-  }
-  @font-face {
-      font-family: "Roboto-Light";
-      src: url("../../fonts/Roboto/Roboto-Light.ttf");
-  }
-  @font-face {
-      font-family: "Roboto-Medium";
-      src: url("../../fonts/Roboto/Roboto-Medium.ttf");
-  }
-  @font-face {
-    font-family: "Shrikhand";
-    src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
-  }
 
-@mixin headerCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin titleBold {
-    font: bold 20px "Roboto-bold", sans-serif;
-}
-@mixin titleHeader {
-    font: bold 25px "Roboto-bold",sans-serif;
-}
-@mixin shrikhand {
-    font : 20px "shrikhand", sans-serif;
-}
+@import "./Base/base";
 
+@import "./Utils/variables";
+
+@import "./Utils/mixins";
 
 
 .footer__brand {
@@ -52,7 +18,14 @@ body {
 }
 footer {
     width: 100%;
-    background-color: #9a9a9a;
+    background-color: $gray-footer;
+    color: white;
+    text-decoration: none;
+
+        > ul > li > a {
+            color: white;
+            text-decoration: none;
+ }
 }
 
 .header__heading {
@@ -66,7 +39,7 @@ footer {
 }
 .location {
     @include headerCenter;
-    background-color: #e6e6e6;
+    background-color: $gray-location;
     padding: 0;
     >i{
         margin-right: 10px;
@@ -75,7 +48,7 @@ footer {
 
 header {
     
-    background-color: #f3f3f3;
+    background-color: $gray-header;
 }
 .quote {
     padding-bottom: 35px;

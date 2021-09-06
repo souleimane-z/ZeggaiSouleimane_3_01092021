@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: url("../../fonts/Roboto/Roboto-Regular.ttf");
@@ -22,6 +23,8 @@
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
+/* couleurs utilisées 
+couleurs utilisées */
 .footer__brand {
   font: 20px "shrikhand", sans-serif;
 }
@@ -35,7 +38,13 @@ body {
 
 footer {
   width: 100%;
-  background-color: #9a9a9a;
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+}
+footer > ul > li > a {
+  color: white;
+  text-decoration: none;
 }
 
 .header__heading {
@@ -53,7 +62,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e6e6e6;
+  background-color: #E6E6E6;
   padding: 0;
 }
 .location > i {
@@ -61,7 +70,7 @@ footer {
 }
 
 header {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
 }
 
 .quote {
