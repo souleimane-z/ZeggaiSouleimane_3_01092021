@@ -3,20 +3,39 @@
   src: url("../../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
+  font-family: "Roboto-bold";
+  src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
-h5 {
-  font: 20px "Shrikhand", sans-serif;
+.footer__brand {
+  font: 20px "shrikhand", sans-serif;
 }
 
 body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
   font: 15px "Roboto", sans-serif;
 }
 
 footer {
   width: 100%;
-  background-color: #3a3b3c;
+  background-color: #9a9a9a;
 }
 
 .header__heading {
@@ -24,18 +43,30 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background-color: white;
+}
+.header__headingh1 {
+  font: bold 25px "Roboto-bold", sans-serif;
 }
 
 .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #D3D3D3;
+  background-color: #e6e6e6;
+  padding: 0;
 }
 .location > i {
   margin-right: 10px;
 }
 
+header {
+  background-color: #f3f3f3;
+}
+
+.quote {
+  padding-bottom: 35px;
+}
 .quote > h1 {
   display: flex;
   justify-content: center;
@@ -50,6 +81,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  font: bold 20px "Roboto-bold", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

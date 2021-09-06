@@ -3,6 +3,22 @@
     src: url("../../fonts/Roboto/Roboto-Regular.ttf");
   }
   @font-face {
+    font-family: "Roboto-bold";
+    src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Thin";
+    src: url("../../fonts/Roboto/Roboto-Thin.ttf");
+  }
+  @font-face {
+      font-family: "Roboto-Light";
+      src: url("../../fonts/Roboto/Roboto-Light.ttf");
+  }
+  @font-face {
+      font-family: "Roboto-Medium";
+      src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+  }
+  @font-face {
     font-family: "Shrikhand";
     src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
   }
@@ -12,32 +28,57 @@
     justify-content: center;
     align-items: center;
 }
-
-
-h5 {
-    font: 20px "Shrikhand", sans-serif;
+@mixin titleBold {
+    font: bold 20px "Roboto-bold", sans-serif;
 }
+@mixin titleHeader {
+    font: bold 25px "Roboto-bold",sans-serif;
+}
+@mixin shrikhand {
+    font : 20px "shrikhand", sans-serif;
+}
+
+
+
+.footer__brand {
+    @include shrikhand;
+}
+
 body {
-  font: 15px "Roboto", sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font: 15px "Roboto", sans-serif;
 }
 footer {
     width: 100%;
-    background-color: #3a3b3c;
+    background-color: #9a9a9a;
 }
 
 .header__heading {
     @include headerCenter;
     padding: 10px;
+    background-color: white;
+
+&h1 {
+    @include titleHeader; 
+}
 }
 .location {
     @include headerCenter;
-    background-color: #D3D3D3;
+    background-color: #e6e6e6;
+    padding: 0;
     >i{
         margin-right: 10px;
     }
 }
 
+header {
+    
+    background-color: #f3f3f3;
+}
 .quote {
+    padding-bottom: 35px;
     >h1 {
         @include headerCenter;
     }
@@ -47,7 +88,10 @@ footer {
     }
     >.exploreHeader{
         @include headerCenter;
-
     }
 
+}
+
+.title {
+    @include titleBold;
 }
