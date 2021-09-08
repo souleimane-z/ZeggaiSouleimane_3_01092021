@@ -1,0 +1,44 @@
+.quote {
+    width: 100%;
+    padding-bottom: 35px;
+    text-decoration: none;
+    >.quote__principal {
+        @include headerCenter;
+        @include titleHeader; 
+    }
+    >h4 {
+        @include headerCenter;
+        font: 20px "Roboto-Light", sans-serif;
+
+    }
+    
+
+}
+.quote__explore {
+    @include headerCenter;
+&--button{
+    position: relative;
+    border: none;
+        border-radius: 30px;
+        background-image: linear-gradient(0deg, $color-primary,$color-secondary);
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font: bold 22px "roboto",sans-serif;
+        width: 19rem;
+        height: 4rem;
+    }
+}
+.functioning{
+    &__choices {
+        &__choices--numbers {
+            color: red;
+
+        }
+    }
+&__title {
+    @include titleBold;
+}
+
+}
