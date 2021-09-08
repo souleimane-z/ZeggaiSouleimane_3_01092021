@@ -31,12 +31,29 @@
     }
 }
 .functioning{
-    &__choices {
-        &__choices--numbers {
-            color: red;
-
-        }
+    font-size: 30px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative;
+        .functioning__choices li {
+        list-style: none;
     }
+
+        .functioning__choices--numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            color: #FFF;
+            background-color: $color-primary;
+            border-radius: 100%;
+            border: 2px solid $color-primary;
+    }
+    
 &__title {
     @include titleBold;
 }
