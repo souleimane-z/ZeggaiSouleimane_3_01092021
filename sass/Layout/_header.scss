@@ -1,0 +1,19 @@
+.header__heading {
+    @include headerCenter;
+    padding: 10px;
+    background-color: white;
+
+}
+.location {
+    @include headerCenter;
+    background-color: $gray-location;
+    padding: 0;
+    >i{
+        margin-right: 10px;
+    }
+}
+
+header {
+    
+    background-color: $gray-header;
+}

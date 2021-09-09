@@ -28,34 +28,9 @@
         font: bold 22px "roboto",sans-serif;
         width: 19rem;
         height: 4rem;
+        &:hover{
+            opacity: 75%;
+            box-shadow: 0.25rem 0.25rem 0.625rem #000000;
+          }
     }
-}
-.functioning{
-    font-size: 30px;
-    
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    position: relative;
-        .functioning__choices li {
-        list-style: none;
-    }
-
-        .functioning__choices--numbers {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 32px;
-            height: 32px;
-            position: relative;
-            color: #FFF;
-            background-color: $color-primary;
-            border-radius: 100%;
-            border: 2px solid $color-primary;
-    }
-    
-&__title {
-    @include titleBold;
-}
-
 }

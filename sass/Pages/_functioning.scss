@@ -1,0 +1,63 @@
+
+.functioning{
+    font-size: 30px;
+    background-color: #FFF;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+
+        &__title {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            @include titleBold;
+    }
+
+        &__choicesLi {
+            list-style: none;
+            @include headerCenter ;            
+            border-radius: 20px;
+            background-color: $gray-header;
+            margin: 10px;
+            padding: 10px;
+            width: 31rem;
+            height: 5rem;
+
+
+
+            &--numbers {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                left: -17%;
+                width: 32px;
+                height: 32px;
+                position: relative;
+                color: #FFF;
+                background-color: $color-primary;
+                border-radius: 100%;
+                border: 2px solid $color-primary;
+            }
+            &--icons {
+                position: relative;
+                color: darken($gray-header, 40%);
+                left: -3rem;
+            &.iPurple {
+                            color: $color-primary;
+                            opacity: 0.5;
+                        }
+            }
+            
+
+            &:hover {
+                background-color: lighten($color-primary, 32%);
+                opacity: 0.9;
+            }
+    }
+
+    
+
+
+}

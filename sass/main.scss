@@ -1,75 +1,22 @@
 
 @import "./Base/base";
 
-@import "./Utils/variables";
 
-@import "./Utils/mixins";
+@import "./Utils/variables", 
+        "./Utils/mixins";
 
 
-.footer__brand {
-    @include shrikhand;
-}
+@import "./Layout/body" , 
+        "./Layout/footer" ,  
+        "./Layout/header" ,  
+        "./Layout/layout" ;
 
-body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font: 15px "Roboto", sans-serif;
-}
-footer {
-    width: 100%;
-    background-color: $gray-footer;
-    color: white;
-    text-decoration: none;
-    >ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-    }
-        >ul > li > a {
-            color: white;
-            text-decoration: none;
- }
-}
+        
+@import "./Pages/functioning" ,  
+        "./Pages/headingHomePage" ,  
+        "./Pages/pages" ,
+        "./Pages/restaurantsHome";
 
-.header__heading {
-    @include headerCenter;
-    padding: 10px;
-    background-color: white;
 
-&h1 {
-    @include titleHeader; 
-}
-}
-.location {
-    @include headerCenter;
-    background-color: $gray-location;
-    padding: 0;
-    >i{
-        margin-right: 10px;
-    }
-}
 
-header {
-    
-    background-color: $gray-header;
-}
-.quote {
-    padding-bottom: 35px;
-    >h1 {
-        @include headerCenter;
-    }
-    >h4 {
-        @include headerCenter;
 
-    }
-    >.exploreHeader{
-        @include headerCenter;
-    }
-
-}
-
-.title {
-    @include titleBold;
-}
