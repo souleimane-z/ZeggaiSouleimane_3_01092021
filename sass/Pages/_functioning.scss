@@ -54,6 +54,7 @@
             &:hover {
                 background-color: lighten($color-primary, 32%);
                 opacity: 0.9;
+                cursor: pointer;
             }
     }
 

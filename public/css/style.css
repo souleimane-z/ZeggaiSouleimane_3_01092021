@@ -65,17 +65,24 @@ footer > ul > li > a {
   align-items: center;
   padding: 10px;
   background-color: white;
+  position: relative;
 }
-
-.location {
+.header__heading__location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #E6E6E6;
   padding: 0;
 }
-.location > i {
-  margin-right: 10px;
+.header__heading__location__places {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #E6E6E6;
+  height: 40px;
+  margin-left: 20px;
 }
 
 header {
@@ -137,32 +144,33 @@ header {
 .functioning__choicesLi:hover {
   background-color: #e9ddf8;
   opacity: 0.9;
+  cursor: pointer;
 }
 
-.quote {
+.header__heading__quote {
   width: 100%;
   padding-bottom: 35px;
   text-decoration: none;
 }
-.quote > .quote__principal {
+.header__heading__quote__principal {
   display: flex;
   justify-content: center;
   align-items: center;
   font: bold 32px "Roboto-bold", sans-serif;
 }
-.quote > h4 {
+.header__heading__quote > h4 {
   display: flex;
   justify-content: center;
   align-items: center;
   font: 20px "Roboto-Light", sans-serif;
 }
 
-.quote__explore {
+.header__heading__quote__explore {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.quote__explore--button {
+.header__heading__quote__explore--button {
   position: relative;
   border: none;
   border-radius: 30px;
@@ -175,7 +183,8 @@ header {
   width: 19rem;
   height: 4rem;
 }
-.quote__explore--button:hover {
+.header__heading__quote__explore--button:hover {
+  cursor: pointer;
   opacity: 75%;
   box-shadow: 0.25rem 0.25rem 0.625rem #000000;
 }

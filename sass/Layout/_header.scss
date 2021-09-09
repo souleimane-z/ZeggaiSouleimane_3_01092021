@@ -2,17 +2,25 @@
     @include headerCenter;
     padding: 10px;
     background-color: white;
-
-}
-.location {
+    position: relative;
+&__location {
     @include headerCenter;
     background-color: $gray-location;
     padding: 0;
-    >i{
-        margin-right: 10px;
+
+    &__places {
+        position: relative;
+        @include headerCenter;
+        border: none;
+        background-color: $gray-location;
+        height: 40px;
+        margin-left: 20px;
+        
     }
 }
 
+
+}
 header {
     
     background-color: $gray-header;

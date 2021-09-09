@@ -1,8 +1,10 @@
-.quote {
+
+
+.header__heading__quote {
     width: 100%;
     padding-bottom: 35px;
     text-decoration: none;
-    >.quote__principal {
+    &__principal {
         @include headerCenter;
         @include titleHeader; 
     }
@@ -14,7 +16,7 @@
     
 
 }
-.quote__explore {
+.header__heading__quote__explore {
     @include headerCenter;
 &--button{
     position: relative;
@@ -28,7 +30,9 @@
         font: bold 22px "roboto",sans-serif;
         width: 19rem;
         height: 4rem;
+
         &:hover{
+            cursor: pointer;
             opacity: 75%;
             box-shadow: 0.25rem 0.25rem 0.625rem #000000;
           }
