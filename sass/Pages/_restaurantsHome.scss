@@ -1,0 +1,10 @@
+.cardSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    &--title{
+        @include titleBold;
+        @include headerCenter;
+    }
+}

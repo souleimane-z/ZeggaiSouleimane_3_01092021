@@ -203,4 +203,16 @@ header {
   box-shadow: 0.25rem 0.25rem 0.625rem #000000;
 }
 
+.cardSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.cardSection--title {
+  font: bold 30px "Roboto-bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
