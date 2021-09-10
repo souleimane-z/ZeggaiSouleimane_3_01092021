@@ -1,18 +1,23 @@
 
 .functioning{
-    font-size: 30px;
-    background-color: #FFF;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
+    margin-left: auto;
+    background-color: #FFF;
 
 
         &__title {
             position: relative;
-            display: flex;
-            justify-content: center;
+            @include headerCenter;
             @include titleBold;
+    }
+        &__choices {
+            @include headerCenter;
+            position: relative;
+            flex-direction: row;
+            padding: 20px;
+            
     }
 
         &__choicesLi {
@@ -20,10 +25,10 @@
             @include headerCenter ;            
             border-radius: 20px;
             background-color: $gray-header;
-            margin: 10px;
+            margin: 20px;
             padding: 10px;
-            width: 31rem;
-            height: 5rem;
+            width: 24rem;
+            height: 3.5rem;
 
 
 
@@ -31,7 +36,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                left: -17%;
+                left: -3.2rem;
                 width: 32px;
                 height: 32px;
                 position: relative;
@@ -39,23 +44,31 @@
                 background-color: $color-primary;
                 border-radius: 100%;
                 border: 2px solid $color-primary;
-            }
+        }
             &--icons {
                 position: relative;
                 color: darken($gray-header, 40%);
-                left: -3rem;
-            &.iPurple {
+                left: -1.5rem;
+                font-size: 28px;
+
+                    &.iPurple {
                             color: $color-primary;
                             opacity: 0.5;
-                        }
-            }
+                }
+        }
             
 
             &:hover {
                 background-color: lighten($color-primary, 32%);
                 opacity: 0.9;
                 cursor: pointer;
-            }
+        }
+
+        &--text{
+            font-size: 25px;
+            font-weight: lighter;
+            font-family: "Roboto-Medium", sans-serif;
+        }
     }
 
     
