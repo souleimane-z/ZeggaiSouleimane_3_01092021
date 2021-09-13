@@ -1,10 +1,33 @@
 .cardSection {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row wrap;
 
     &--title{
         @include titleBold;
         @include headerCenter;
+        width: 100%;
+    }
+
+    &__cards{
+        background-color: #FFF;
+        width: 40rem;
+        height: 20rem;
+        margin: 0 0.5rem 2rem 0.5rem;
+        border-radius: 2rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+        position: relative;
+    }
+
+    &__Pics{
+        &--img{
+            object-fit: cover;
+            width: 40rem;
+            height: 15rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            position: relative;
+            left: -2.5rem;
+            top: -1rem;
+        }
     }
 }

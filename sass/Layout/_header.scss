@@ -3,25 +3,30 @@
     padding: 10px;
     background-color: white;
     position: relative;
+    &--logo{
+        @include headerCenter;
+        flex-basis: 100%;
+    }
 &__location {
     @include headerCenter;
     background-color: $gray-location;
     padding: 0;
-
+    flex-basis: 100%;
+    margin: 0;
+    font-size: 20px;
     &__places {
         position: relative;
         @include headerCenter;
         border: none;
         background-color: $gray-location;
         height: 40px;
-        margin-left: 20px;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+        
         
     }
 }
 
 
-}
-header {
-    
-    background-color: $gray-header;
 }

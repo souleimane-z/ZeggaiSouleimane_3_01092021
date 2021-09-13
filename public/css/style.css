@@ -67,12 +67,21 @@ footer > ul > li > a {
   background-color: white;
   position: relative;
 }
+.header__heading--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
 .header__heading__location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #E6E6E6;
   padding: 0;
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 20px;
 }
 .header__heading__location__places {
   position: relative;
@@ -82,11 +91,9 @@ footer > ul > li > a {
   border: none;
   background-color: #E6E6E6;
   height: 40px;
-  margin-left: 20px;
-}
-
-header {
-  background-color: #F3F3F3;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
 }
 
 .title {
@@ -189,7 +196,7 @@ header {
   border: none;
   border-radius: 30px;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
-  color: #fff;
+  color: #F3F3F3;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -206,13 +213,32 @@ header {
 .cardSection {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row wrap;
 }
 .cardSection--title {
   font: bold 30px "Roboto-bold", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.cardSection__cards {
+  background-color: #FFF;
+  width: 40rem;
+  height: 20rem;
+  margin: 0 0.5rem 2rem 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+.cardSection__Pics--img {
+  object-fit: cover;
+  width: 40rem;
+  height: 15rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+  left: -2.5rem;
+  top: -1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
