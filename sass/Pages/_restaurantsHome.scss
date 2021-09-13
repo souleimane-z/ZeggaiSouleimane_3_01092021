@@ -1,7 +1,7 @@
 .cardSection {
     display: flex;
-    justify-content: center;
-    flex-direction: row wrap;
+    flex-wrap : wrap;
+    width: 100%;
     
 
     &--title{
@@ -11,15 +11,11 @@
     }
 
     &__cards{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        @include headerCenter;
             &__Content{
                 
                 background-color: #FFF;
-                width: 100%;
+                width: 30%;
                 height: 320px;
                 border-radius: 2rem;
                 box-shadow: 10px 5px 5px $gray-location;

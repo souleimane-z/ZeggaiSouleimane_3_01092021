@@ -218,8 +218,8 @@ footer > ul > li > a {
 
 .cardSection {
   display: flex;
-  justify-content: center;
-  flex-direction: row wrap;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .cardSection--title {
   font: bold 30px "Roboto-bold", sans-serif;
@@ -232,11 +232,10 @@ footer > ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .cardSection__cards__Content {
   background-color: #FFF;
-  width: 100%;
+  width: 30%;
   height: 320px;
   border-radius: 2rem;
   box-shadow: 10px 5px 5px #E6E6E6;
