@@ -1,3 +1,5 @@
+
+/*Mixins : mise en forme */
 @mixin headerCenter {
     display: flex;
     justify-content: center;
@@ -12,3 +14,18 @@
 @mixin shrikhand {
     font : 20px "shrikhand", sans-serif;
 }
+
+/*Breakpoints Responsive*/
+
+@mixin Tablets {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        @content;
+        }
+}
+
+@mixin Smartphones {
+    @media (max-width: 760px) {
+        @content;
+        }
+}
+

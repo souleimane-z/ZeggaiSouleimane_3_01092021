@@ -3,18 +3,17 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin-left: auto;
+    flex-basis: 100%;    
     background-color: #FFF;
+    overflow-x: hidden;
 
 
         &__title {
-            position: relative;
             @include headerCenter;
             @include titleBold;
     }
         &__choices {
             @include headerCenter;
-            position: relative;
             flex-direction: row;
             padding: 20px;
             
