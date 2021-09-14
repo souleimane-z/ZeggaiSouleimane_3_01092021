@@ -23,10 +23,10 @@
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
-/* couleurs utilisées 
-couleurs utilisées */
+/* couleurs utilisées */
 /*Mixins : mise en forme */
-/*Breakpoints Responsive*/
+/*Breakpoints : Responsive*/
+/*Règles Générales de la page*/
 body {
   width: 100%;
   padding: 0;
@@ -40,6 +40,7 @@ a {
   color: black;
 }
 
+/*Footer*/
 footer {
   width: 100%;
   height: 150px;
@@ -66,6 +67,7 @@ footer > ul > li > a {
   margin-bottom: 0;
 }
 
+/*Header pour toutes les pages*/
 .header__heading {
   display: flex;
   justify-content: center;
@@ -103,10 +105,12 @@ footer > ul > li > a {
   width: 200px;
 }
 
+/*Règle Générale d'écriture*/
 .title {
   font: bold 30px "Roboto-bold", sans-serif;
 }
 
+/*header: Fonctionnement du site*/
 .functioning {
   display: flex;
   flex-flow: column wrap;
@@ -174,6 +178,7 @@ footer > ul > li > a {
   font-family: "Roboto-Medium", sans-serif;
 }
 
+/*Header: texte home-page*/
 .header__heading__quote {
   width: 100%;
   padding-bottom: 35px;
@@ -216,27 +221,27 @@ footer > ul > li > a {
   box-shadow: 0.25rem 0.25rem 0.625rem #000000;
 }
 
+/*Restaurants : Home-Page*/
 .cardSection {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 .cardSection--title {
   font: bold 30px "Roboto-bold", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .cardSection__cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .cardSection__cards__Content {
   background-color: #FFF;
-  width: 30%;
-  height: 320px;
+  width: 40rem;
+  height: 360px;
   border-radius: 2rem;
   box-shadow: 10px 5px 5px #E6E6E6;
 }
@@ -246,6 +251,9 @@ footer > ul > li > a {
   height: 240px;
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
+}
+.cardSection__cards:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
