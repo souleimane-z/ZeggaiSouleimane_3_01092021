@@ -37,23 +37,37 @@
 	<main>
 
 <!--Explications du fonctionnement du site-->
-		<article class="functioning">
-			<h3 class="functioning__title">Fonctionnement</h3>
-			<ul class="functioning__choices">
-				<li class="functioning__choicesLi">
-					<div class="functioning__choicesLi--numbers">1</div> <i class="fas fa-mobile-alt functioning__choicesLi--icons"></i>
-					<p class="functioning__choicesLi--text">Choisissez un restaurant</p>
-				</li>
-				<li class="functioning__choicesLi">
-					<div class="functioning__choicesLi--numbers">2</div> <i class="fas fa-list-ul functioning__choicesLi--icons"></i>
-					<p class="functioning__choicesLi--text">Composez votre menu</p>
-				</li>
-				<li class="functioning__choicesLi">
-					<div class="functioning__choicesLi--numbers">3</div> <i class="fas fa-store functioning__choicesLi--icons iPurple"></i>
-					<p class="functioning__choicesLi--text">Dégustez au restaurant</p>
-				</li>
-			</ul>
-		</article>
+<article class="functioning">
+	<h3 class="functioning__title">Fonctionnement</h3>
+
+	<div class="functioning__choices">
+	   <span class="functioning__choices--number">
+		  1
+	   </span>
+	   <button class="functioning__choices--txt choice">
+		  <i class="fas fa-mobile-alt choice__icons"></i>
+		  Choisissez votre restaurant
+	   </button>
+	</div>
+	<div class="functioning__choices">
+	   <span class="functioning__choices--number choice">
+		  2
+	   </span>
+	   <button class="functioning__choices--txt">
+		  <i class="fas fa-list-ul choice__icons"></i>
+		  Composez votre menu
+	   </button>
+	</div>
+	<div class="functioning__choices">
+	   <span class="functioning__choices--number choice">
+		  3
+	   </span>
+	   <button class="functioning__choices--txt">
+		  <i class="fas fa-store choice__icons" id="iPurple"></i>
+		  Dégustez au restaurant
+	   </button>
+	</div>
+ </article>
 
 <!--Choix des Restaurants-->
 		<section class="cardsSection" id="restaurants">
@@ -67,7 +81,7 @@
 						<figcaption class="cardSection__cards__Content--Name">
 							<h5>La palette du goût</h5>
 							<p>Ménilmontant</p>
-							<div class=""> <i class="far fa-heart cardSection__cards--heart"></i> </div>
+							<i class="far fa-heart"></i>
 						</figcaption>
 					</figure>
 				</a>
@@ -81,7 +95,7 @@
 						<figcaption class="cardSection__cards__Content--Name">
 							<h5>La note énchanté</h5>
 							<p>Charonne</p>
-							<div class="cardSection__cards--heart"> <i class="far fa-heart"></i> </div>
+							<i class="far fa-heart"></i>
 						</figcaption>
 					</figure>
 				</a>
@@ -92,7 +106,7 @@
 						<figcaption class="cardSection__cards__Content--Name">
 							<h5>À la française</h5>
 							<p>Cité Rouge</p>
-							<div class="cardSection__cards--heart"> <i class="far fa-heart"></i> </div>
+							<i class="far fa-heart"></i>
 						</figcaption>
 					</figure>
 				</a>
@@ -103,7 +117,7 @@
 						<figcaption class="cardSection__cards__Content--Name">
 							<h5>Le délice du sens</h5>
 							<p>Folie-Méricourt</p>
-							<div class="cardSection__cards--heart"> <i class="far fa-heart"></i> </div>
+							<i class="far fa-heart"></i>
 						</figcaption>
 					</figure>
 				</a>

@@ -110,72 +110,66 @@ footer > ul > li > a {
   font: bold 30px "Roboto-bold", sans-serif;
 }
 
-/*header: Fonctionnement du site*/
 .functioning {
+  background-color: #fff;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  flex-basis: 100%;
-  background-color: #FFF;
-  overflow-x: hidden;
+  align-items: center;
+  height: 300px;
 }
-.functioning__title {
+.functioning h3 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font: bold 30px "Roboto-bold", sans-serif;
 }
 .functioning__choices {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
-.functioning__choicesLi {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #F3F3F3;
-  margin: 20px;
-  padding: 10px;
-  width: 24rem;
-  height: 3.5rem;
-}
-.functioning__choicesLi--numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: -3.2rem;
+.functioning__choices--number {
+  position: relative;
+  left: 1rem;
+  background-color: #9356DC;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  padding: 9px 9px;
+  font-weight: bold;
   width: 32px;
   height: 32px;
-  position: relative;
-  color: #FFF;
-  background-color: #9356DC;
-  border-radius: 100%;
   border: 2px solid #9356DC;
 }
-.functioning__choicesLi--icons {
-  position: relative;
-  color: #8d8d8d;
-  left: -1.5rem;
-  font-size: 28px;
-}
-.functioning__choicesLi--icons.iPurple {
-  color: #9356DC;
-  opacity: 0.5;
-}
-.functioning__choicesLi:hover {
-  background-color: #e9ddf8;
-  opacity: 0.9;
+.functioning__choices--txt {
+  background-color: #F3F3F3;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  width: 265px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-weight: bold;
   cursor: pointer;
 }
-.functioning__choicesLi--text {
-  font-size: 25px;
-  font-weight: lighter;
-  font-family: "Roboto-Medium", sans-serif;
+.functioning__choices:hover button {
+  background-color: #e9ddf8;
+  cursor: pointer;
+}
+.functioning__choices:hover .choice__icons {
+  color: #9356DC;
+  filter: brightness(95%);
+}
+
+.choice__icons {
+  position: relative;
+  left: 1rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  color: #8d8d8d;
 }
 
 /*Header: texte home-page*/
@@ -236,14 +230,27 @@ footer > ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
 }
 .cardSection__cards__Content {
   background-color: #FFF;
   width: 40rem;
-  height: 360px;
+  height: 320px;
   border-radius: 2rem;
   box-shadow: 10px 5px 5px #E6E6E6;
+}
+.cardSection__cards__Content--new {
+  position: absolute;
+  margin-left: 32rem;
+  Z-index: 1000;
+  width: 5.5rem;
+  height: 2rem;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #278870;
+  font-weight: bold;
+  border-radius: 3px;
 }
 .cardSection__cards__Content--img {
   object-fit: cover;
@@ -251,9 +258,40 @@ footer > ul > li > a {
   height: 240px;
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
-.cardSection__cards:hover {
-  transform: scale(1.1);
+.cardSection__cards__Content--Name {
+  position: relative;
+  top: -1.5rem;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  align-items: center;
+}
+.cardSection__cards__Content--Name p {
+  font-size: 1rem;
+  font-family: "roboto-thin", sans-serif;
+  margin-top: -17px;
+}
+.cardSection__cards__Content--Name i {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 999;
+  top: -4rem;
+  right: 1rem;
+  font-size: 40px;
+}
+.cardSection__cards__Content--Name i:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  z-index: 0;
+  transition-duration: 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */

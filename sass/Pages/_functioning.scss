@@ -1,76 +1,70 @@
-/*header: Fonctionnement du site*/
-.functioning{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    flex-basis: 100%;    
-    background-color: #FFF;
-    overflow-x: hidden;
+.functioning {
+    background-color: #fff;
+    @include headerCenter;
+    height: 300px;
 
-
-        &__title {
-            @include headerCenter;
-            @include titleBold;
+    h3 {
+        position: relative;
+        @include headerCenter;
+        @include titleBold;
     }
-        &__choices {
-            @include headerCenter;
-            flex-direction: row;
-            padding: 20px;
-            
-    }
+    &__choices {
+        align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+         &--number{
+            position: relative;
+            left: 1rem;
+            background-color: $color-primary;
+            text-align: center;
+            border-radius: 100%;
+            color: #fff;
+            padding: 9px 9px ;
+            font-weight: bold;
+            width: 32px;
+            height: 32px;
+            border: 2px solid $color-primary;
+         }
 
-        &__choicesLi {
-            list-style: none;
-            @include headerCenter ;            
-            border-radius: 20px;
+         &--txt {
             background-color: $gray-header;
-            margin: 20px;
-            padding: 10px;
-            width: 24rem;
-            height: 3.5rem;
-
-
-
-            &--numbers {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                left: -3.2rem;
-                width: 32px;
-                height: 32px;
-                position: relative;
-                color: #FFF;
-                background-color: $color-primary;
-                border-radius: 100%;
-                border: 2px solid $color-primary;
-        }
-            &--icons {
-                position: relative;
-                color: darken($gray-header, 40%);
-                left: -1.5rem;
-                font-size: 28px;
-
-                    &.iPurple {
-                            color: $color-primary;
-                            opacity: 0.5;
-                }
-        }
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            width: 265px;
+            margin-bottom: 25px;
+            text-align: left;
+            font-weight: bold;
+            cursor: pointer;
             
+         }
 
-            &:hover {
+        &:hover {
+            button {
                 background-color: lighten($color-primary, 32%);
-                opacity: 0.9;
                 cursor: pointer;
-        }
-
-        &--text{
-            font-size: 25px;
-            font-weight: lighter;
-            font-family: "Roboto-Medium", sans-serif;
+            }
+            .choice__icons {
+            color: $color-primary;
+            filter: brightness(95%);
+            }
         }
     }
+
+}
 
     
 
 
+.choice {
+    &__icons {
+        position: relative;
+        left: 1rem;
+        padding-right: 2rem;
+        font-size: 1.2rem;
+        color: darken($gray-header, 40%);
+
+    }
 }

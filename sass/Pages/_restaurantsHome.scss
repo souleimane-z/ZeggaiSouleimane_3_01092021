@@ -13,16 +13,30 @@
 
     &__cards{
         @include headerCenter;
-	    transition: all 0.3s ease;
+        
 
             &__Content{
                 
                 background-color: #FFF;
                 width: 40rem;
-                height: 360px;
+                height: 320px;
                 border-radius: 2rem;
                 box-shadow: 10px 5px 5px $gray-location;
-                
+
+                    &--new{
+                    position: absolute;
+                    margin-left: 32rem;
+                    Z-index: 1000;
+                    width: 5.5rem;
+                    height: 2rem;
+                    background-color: $color-tertiary;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: darken($color-tertiary, 40%);
+                    font-weight: bold;
+                    border-radius: 3px;
+                    }
 
                     &--img{
                     object-fit: cover;
@@ -30,12 +44,46 @@
                     height: 240px;
                     border-radius: 1.5rem 1.5rem 0 0;
                     position: relative;
+                    margin: 0;
+                    padding: 0;
+                    }
+            
+                    &--Name {
+                        
+                        position: relative;
+                        top: -1.5rem;
+                        margin-left: 10px;
+                        font-weight: bolder;
+                        font-size: 1.4rem;
+                        align-items: center;
+
+                    p{
+                        font-size: 1rem;
+                        font-family: "roboto-thin",sans-serif;
+                        margin-top: -17px;
+                    }
+                    i{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        z-index: 999;
+                        top: -4rem;
+                        right: 1rem;
+                        font-size: 40px;
+                        &:hover {
+                            font-weight: bold;
+                            background: -webkit-linear-gradient($color-primary, $color-secondary);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            opacity: 1;
+                            z-index: 0;
+                            transition-duration: 500ms;
+                        }
+                    }
                     }
 
             }
             
-        &:hover{
-        transform: scale(1.1);
-        }
     }
 }
