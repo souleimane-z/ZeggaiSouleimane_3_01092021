@@ -1,0 +1,136 @@
+
+//  Logo et Image : Header
+
+
+.header{
+    
+    &__heading {
+    position: relative;
+    text-align: center;
+    height: 4rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    background-color: #FFF;
+
+        &--arrow {
+            position: absolute;
+            left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            top: 35%;
+            display: flex;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 32rem;
+        object-fit: cover;
+    }
+
+
+}
+
+//  Menus des Reataurants
+
+.Restaurants {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: $gray-header;
+    position: relative;
+    top: -2rem;
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 13rem;
+    border-radius: 1rem;
+
+    &__name {
+        position: absolute;
+        left: 1rem ;
+        margin-bottom: 2rem;
+        font-family: "Shrikhand", "cursive";
+
+        
+
+        &--icon {
+            position: absolute;
+            top: 1.5rem;
+            margin-left: 95%;
+            cursor: pointer;
+            z-index: 1;
+            font-size: 25px;
+
+                &:hover{
+                    font-weight: bold;
+                    background: -webkit-linear-gradient($color-primary, $color-secondary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 1;
+                    transition-duration: 500ms;
+                }
+        }
+    }
+
+
+}
+
+.Restaurants__Menus {
+    
+        &-boxes {
+            position: relative;
+            background-color: #FFFFFF;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+            margin: 1rem 1.5rem 0 2rem;
+            border-radius: 1rem;
+            width: 23rem;
+            height: 4.6rem;
+            top: 4rem;
+            left: 0;
+            overflow: hidden;
+            cursor: pointer;
+
+            h3{
+                
+                position: relative;
+                top: 0;
+                left: 1rem;
+                width: 20rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                
+            position: relative;
+            top: -0.8rem;
+            left: 1rem;
+            font-weight: lighter;
+            width: 20rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            }
+
+            
+        }
+
+}
+
+.cards {
+    &__euros {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        top: -2.8rem;
+        left: -1rem;
+        transition-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+}

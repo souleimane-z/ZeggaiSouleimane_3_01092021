@@ -110,28 +110,137 @@ footer > ul > li > a {
   font: bold 30px "Roboto-bold", sans-serif;
 }
 
+.header__heading {
+  position: relative;
+  text-align: center;
+  height: 4rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  background-color: #FFF;
+}
+.header__heading--arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 35%;
+  display: flex;
+  font-size: 1.3rem;
+}
+.header__img {
+  position: relative;
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+}
+
+.Restaurants {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #F3F3F3;
+  position: relative;
+  top: -2rem;
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 13rem;
+  border-radius: 1rem;
+}
+.Restaurants__name {
+  position: absolute;
+  left: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Shrikhand", "cursive";
+}
+.Restaurants__name--icon {
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 95%;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 25px;
+}
+.Restaurants__name--icon:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transition-duration: 500ms;
+}
+
+.Restaurants__Menus-boxes {
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  margin: 1rem 1.5rem 0 2rem;
+  border-radius: 1rem;
+  width: 23rem;
+  height: 4.6rem;
+  top: 4rem;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Restaurants__Menus-boxes h3 {
+  position: relative;
+  top: 0;
+  left: 1rem;
+  width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.Restaurants__Menus-boxes p {
+  position: relative;
+  top: -0.8rem;
+  left: 1rem;
+  font-weight: lighter;
+  width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cards__euros {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  top: -2.8rem;
+  left: -1rem;
+  transition-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
 .functioning {
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   height: 300px;
 }
 .functioning h3 {
+  padding-top: 10px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font: bold 30px "Roboto-bold", sans-serif;
 }
-.functioning__choices {
+.functioning .functioning-div {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  width: 80%;
 }
-.functioning__choices--number {
+.functioning .functioning-div__choices {
+  position: relative;
+  flex-flow: row nowrap;
+  top: 40px;
+  left: 200px;
+}
+.functioning .functioning-div__choices--number {
   position: relative;
   left: 1rem;
   background-color: #9356DC;
@@ -144,24 +253,41 @@ footer > ul > li > a {
   height: 32px;
   border: 2px solid #9356DC;
 }
-.functioning__choices--txt {
+.functioning .functioning-div__choices--txt {
+  text-align: center;
+  font: bold 20px "roboto-light", sans-serif;
   background-color: #F3F3F3;
   border-radius: 20px;
   border: none;
   padding: 20px;
-  width: 265px;
+  width: 350px;
   margin-bottom: 25px;
   text-align: left;
-  font-weight: bold;
   cursor: pointer;
 }
-.functioning__choices:hover button {
+.functioning .functioning-div__choices:hover button {
   background-color: #e9ddf8;
   cursor: pointer;
 }
-.functioning__choices:hover .choice__icons {
+.functioning .functioning-div__choices:hover .choice__icons {
   color: #9356DC;
   filter: brightness(95%);
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .functioning .functioning-div__choices {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .functioning .functioning-div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .choice__icons {
@@ -287,6 +413,7 @@ footer > ul > li > a {
 .cardSection__cards__Content--Name i:hover {
   font-weight: bold;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;

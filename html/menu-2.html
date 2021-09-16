@@ -11,53 +11,56 @@
       <!-- Intégration des icones FontAwesome -->
       <script src="https://kit.fontawesome.com/327560cffb.js" crossorigin="anonymous"></script>
    </head>
-   <header>
-       <div>
+   <body>
+   <header class="header">
+<div class="header__heading">
             <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-left header__heading--arrow"></i>
             </a>
-       </div>
-    <div class="header__heading">
        <a href="../index.html">
-           <img src="../img/logo/ohmyfood@2x.svg" alt="Accueil">
+           <img class="header__heading--logo" src="../img/logo/ohmyfood@2x.svg" alt="Accueil">
        </a>
-    </div>
-    <img src="../img/restaurants/2-la-note-enchantee.jpg" alt="menu-2">
+</div>
+    <img class="header__img" src="../img/restaurants/2-la-note-enchantee.jpg" alt="menu-2">
    </header>
    <main class="Restaurants">
-        <div class="Restaurants--Name">
+        <div class="Restaurants__name">
             <h2>La note enchantée</h2>
+            <div class="Restaurants__name--icon">
+            <i class="far fa-heart"></i></div>
         </div>
        <aside class="Restaurants__Menus Restaurants__entrees"> 
-           
-        <div class="Restaurants__Menus-boxes">
-            <p>Ravioles de foie gras </p>
+
+        <h2 class="Restaurants__Menus--Title">Entrées</h2>
+
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Ravioles de foie gras </h3>
             <p>Accompagnés de leur crème à la truffe</p>
-            <p>25&euro;</p>
+            <div class="cards__euros">25&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Caviar osciètre</p>
-            <p>Sur blini à la farine de blé noir</p>
-            <p>35&euro;</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Caviar osciètre</h3>
+            <p>Sur blini à la farine de blé noir</div>
+            <div class="cards__euros">35&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Homard et espuma de potiron</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Homard et espuma de potiron</h3>
             <p>Mariné aux zestes d'orange</p>
-            <p>20&euro;</p>
+            <div class="cards__euros">20&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Foie gras de canard cuit entier</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Foie gras de canard cuit entier</h3>
             <p>Confiture de figue et pain toasté</p>
-            <p>35&euro;</p>
+            <div class="cards__euros">35&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -66,27 +69,29 @@
        </aside>
 
        <aside class="Restaurants__Menus Restaurants__dishes"> 
-           
-        <div class="Restaurants__Menus-boxes">
-            <p>Noix de coquilles Saint-Jacques</p>
+
+        <h2 class="Restaurants__Menus--Title">Plats</h2>
+
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Noix de coquilles Saint-Jacques</h3>
             <p>Sur lit de purée de céleri-rave</p>
-            <p>40&euro;</p>
+            <div class="cards__euros">40&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Langoustine poêlée</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Langoustine poêlée</h3>
             <p>Purée de patate douce</p>
-            <p>35&euro;</p>
+            <div class="cards__euros">35&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Mijoté de queue de boeuf</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Mijoté de queue de boeuf</h3>
             <p>Et riz sauvage aux zestes de citron</p>
-            <p>44&euro;</p>
+            <div class="cards__euros">44&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -95,27 +100,29 @@
        </aside>
 
        <aside class="Restaurants__Menus Restaurants__desserts"> 
-           
-        <div class="Restaurants__Menus-boxes">
-            <p>Macaron noisette et chocolat</p>
+
+           <h2 class="Restaurants__Menus--Title">Desserts</h2>
+
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Macaron noisette et chocolat</h3>
             <p>Glace au caramel brun et sel de Guérande</p>
-            <p>18&euro;</p>
+            <div class="cards__euros">18&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Baba au rhum revisité</p>
-            <p>Avec son coulis de citron</p>
-            <p>22&euro;</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Baba au rhum revisité</h3>
+            <p>Avec son coulis de citron</div>
+            <div class="cards__euros">22&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
         </div>
-        <div class="Restaurants__Menus-boxes">
-            <p>Tarte au citron meringuée</p>
+        <div class="Restaurants__Menus-boxes cards">
+            <h3>Tarte au citron meringuée</h3>
             <p>Déstructurée</p>
-            <p>23&euro;</p>
+            <div class="cards__euros">23&euro;</div>
             <div class="Restaurants__Menus-boxes--check">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -158,4 +165,5 @@
         </li>
     </ul>
 </footer>
+</body>
    </html>

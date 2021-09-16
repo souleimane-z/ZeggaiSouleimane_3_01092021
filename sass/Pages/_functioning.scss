@@ -1,58 +1,80 @@
 .functioning {
     background-color: #fff;
-    @include headerCenter;
+    width: 100%;
     height: 300px;
 
     h3 {
+        padding-top: 10px;
         position: relative;
         @include headerCenter;
         @include titleBold;
     }
-    &__choices {
+
+    .functioning-div {
+        display: flex;
         align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-         &--number{
+        justify-content: space-between;
+        width: 80%;
+
+        &__choices {
             position: relative;
-            left: 1rem;
-            background-color: $color-primary;
-            text-align: center;
-            border-radius: 100%;
-            color: #fff;
-            padding: 9px 9px ;
-            font-weight: bold;
-            width: 32px;
-            height: 32px;
-            border: 2px solid $color-primary;
-         }
+            flex-flow: row nowrap;
+            top: 40px;
+            left: 200px;
 
-         &--txt {
-            background-color: $gray-header;
-            border-radius: 20px;
-            border: none;
-            padding: 20px;
-            width: 265px;
-            margin-bottom: 25px;
-            text-align: left;
-            font-weight: bold;
-            cursor: pointer;
+                &--number{
+                    position: relative;
+                    left: 1rem;
+                    background-color: $color-primary;
+                    text-align: center;
+                    border-radius: 100%;
+                    color: #fff;
+                    padding: 9px 9px ;
+                    font-weight: bold;
+                    width: 32px;
+                    height: 32px;
+                    border: 2px solid $color-primary;
+                }
+
+                &--txt {
+                    text-align: center;
+                    font: bold 20px "roboto-light", sans-serif;
+                    background-color: $gray-header;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 20px;
+                    width: 350px;
+                    margin-bottom: 25px;
+                    text-align: left;
+                    cursor: pointer;
+                    
+                }
+
+                &:hover {
+                    button {
+                        background-color: lighten($color-primary, 32%);
+                        cursor: pointer;
+                    }
+                    .choice__icons {
+                    color: $color-primary;
+                    filter: brightness(95%);
+                    }
+                }
+                @include Tablets {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
             
-         }
-
-        &:hover {
-            button {
-                background-color: lighten($color-primary, 32%);
-                cursor: pointer;
+            @include Tablets {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
             }
-            .choice__icons {
-            color: $color-primary;
-            filter: brightness(95%);
-            }
-        }
     }
-
 }
 
     

@@ -11,46 +11,50 @@
       <!-- Intégration des icones FontAwesome -->
       <script src="https://kit.fontawesome.com/327560cffb.js" crossorigin="anonymous"></script>
    </head>
-   <header>
-       <div>
+   <body>
+   <header class="header">
+<div class="header__heading">
             <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-left header__heading--arrow"></i>
             </a>
-       </div>
-    <div class="header__heading">
        <a href="../index.html">
-           <img src="../img/logo/ohmyfood@2x.svg" alt="Accueil">
+           <img class="header__heading--logo" src="../img/logo/ohmyfood@2x.svg" alt="Accueil">
        </a>
-    </div>
-    <img src="../img/restaurants/4-le-delice-du-sens.jpg" alt="menu-4">
+</div>
+    <img class="header__img" src="../img/restaurants/4-le-delice-du-sens.jpg" alt="menu-4">
    </header>
 
     <main class="Restaurants">
-        <div class="Restaurants--Name">
+        <div class="Restaurants__Name">
+
         <h2>Le délice du sens</h2>
+        
+        <i class="far fa-heart Restaurants__name--icon"></i>
         </div>
         <aside class="Restaurants__Menus Restaurants__entrees"> 
-           
-            <div class="Restaurants__Menus-boxes">
-                <p>Tartare de thon</p>
+
+            <h2 class="Restaurants__Menus--Title">Entrées</h2>
+
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Tartare de thon</h3>
                 <p>Assaisonné au yuzu</p>
-                <p>25&euro;</p>
+                <div class="cards__euros">25&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Bouchée de homard croustillant </p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Bouchée de homard croustillant </h3>
                 <p>Et sa farandole de petits légumes</p>
-                <p>35&euro;</p>
+                <div class="cards__euros">35&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Velouté de cèpes</p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Velouté de cèpes</h3>
                 <p>Aux truffes</p>
-                <p>20&euro;</p>
+                <div class="cards__euros">20&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
@@ -59,27 +63,29 @@
            </aside>
 
         <aside class="Restaurants__Menus Restaurants__dishes"> 
-           
-            <div class="Restaurants__Menus-boxes">
-                <p>Poulet rôti aux herbes de Provence </p>
+
+            <h2 class="Restaurants__Menus--Title">Plats</h2>
+            
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Poulet rôti aux herbes de Provence </h3>
                 <p>Et sa crème de truffe</p>
-                <p>40&euro;</p>
+                <div class="cards__euros">40&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Langouste rôtie</p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Langouste rôtie</h3>
                 <p>Et ses légumes de saison</p>
-                <p>35&euro;</p>
+                <div class="cards__euros">35&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Côte de boeuf Angus</p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Côte de boeuf Angus</h3>
                 <p>Et sa purée de panais</p>
-                <p>44&euro;</p>
+                <div class="cards__euros">44&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
@@ -88,27 +94,29 @@
            </aside>
 
         <aside class="Restaurants__Menus Restaurants__desserts"> 
-           
-            <div class="Restaurants__Menus-boxes">
-                <p>Farandole de desserts</p>
+
+            <h2 class="Restaurants__Menus--Title">Desserts</h2>
+
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Farandole de desserts</h3>
                 <p>Du chef</p>
-                <p>18&euro;</p>
+                <div class="cards__euros">18&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Crème brulée</p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Crème brulée</h3>
                 <p>Revisitée</p>
-                <p>22&euro;</p>
+                <div class="cards__euros">22&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="Restaurants__Menus-boxes">
-                <p>Tiramisu</p>
+            <div class="Restaurants__Menus-boxes cards">
+                <h3>Tiramisu</h3>
                 <p>À la noisette</p>
-                <p>23&euro;</p>
+                <div class="cards__euros">23&euro;</div>
                 <div class="Restaurants__Menus-boxes--check">
                     <i class="fas fa-check-circle"></i>
                 </div>
@@ -151,4 +159,5 @@
         </li>
     </ul>
 </footer>
+</body>
    </html>
