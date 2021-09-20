@@ -21,7 +21,7 @@
                 width: 40rem;
                 height: 320px;
                 border-radius: 2rem;
-                box-shadow: lighter($shadowsCards, 20%);
+                box-shadow: $shadowsCards;
 
                     &--new{
                     position: absolute;

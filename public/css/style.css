@@ -412,7 +412,7 @@ i {
   width: 40rem;
   height: 320px;
   border-radius: 2rem;
-  box-shadow: lighter(17px 24px 19px 0px rgba(53, 53, 53, 0.21), 20%);
+  box-shadow: 17px 24px 19px 0px rgba(53, 53, 53, 0.21);
 }
 .cardSection__cards__Content--new {
   position: absolute;
