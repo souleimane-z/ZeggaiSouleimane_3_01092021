@@ -1,27 +1,27 @@
 
 /*Restaurants : Home-Page*/
 .cardSection {
-    display: flex;
-    flex-wrap : wrap;
-    
+    @include headerCenter;
+    width: 100%;
 
-    &--title{
+    flex-flow: row wrap;
+    &__title{
+        padding-top: 10px;
+        @include headerCenter;
         @include titleBold;
-        @include headerCenter;
-
     }
+        &__cards {
+            
 
-    &__cards{
-        @include headerCenter;
-        
-
+            @include headerCenter;
+            flex-flow: row wrap;
             &__Content{
                 
                 background-color: #FFF;
                 width: 40rem;
                 height: 320px;
                 border-radius: 2rem;
-                box-shadow: 10px 5px 5px $gray-location;
+                box-shadow: lighter($shadowsCards, 20%);
 
                     &--new{
                     position: absolute;
@@ -53,10 +53,9 @@
                         position: relative;
                         top: -1.5rem;
                         margin-left: 10px;
-                        font-weight: bolder;
+                        font-weight: bold;
                         font-size: 1.4rem;
                         align-items: center;
-
                     p{
                         font-size: 1rem;
                         font-family: "roboto-thin",sans-serif;
@@ -69,7 +68,7 @@
                         justify-content: flex-end;
                         z-index: 999;
                         top: -4rem;
-                        right: 1rem;
+                        right: 1.6rem;
                         font-size: 40px;
                         &:hover {
                             font-weight: bold;
@@ -86,5 +85,6 @@
 
             }
             
-    }
+    
+        }
 }

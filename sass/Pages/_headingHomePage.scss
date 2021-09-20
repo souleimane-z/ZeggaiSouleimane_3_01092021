@@ -36,7 +36,7 @@
         &:hover{
             cursor: pointer;
             opacity: 75%;
-            box-shadow: 0.25rem 0.25rem 0.625rem #000000;
+            box-shadow: $shadows;
           }
     }
 }

@@ -1,65 +1,72 @@
 .functioning {
     background-color: #fff;
-    width: 100%;
-    height: 300px;
-
-    h3 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-left: auto;
+    padding-bottom: 2rem;
+    &__title {
         padding-top: 10px;
         position: relative;
         @include headerCenter;
         @include titleBold;
     }
 
-    .functioning-div {
+    .functioning-ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-
-        &__choices {
-            position: relative;
+        flex-flow: row nowrap;
+        justify-content: center;
+        position: relative;
+    
+        &__choices {    
+            display: flex;
             flex-flow: row nowrap;
-            top: 40px;
-            left: 200px;
-
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 4rem;
+            margin-right: 3rem;
+            padding-right: 3rem;
+            border-radius: 1rem;
+            background-color: $gray-header;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+            cursor: pointer;
+            background-color: $gray-header;
+            &:hover {
+                    background-color: lighten($color-primary, 32%);
+                .functioning-ul__choices--icons{
+                color: $color-primary;
+                filter: brightness(95%);
+                }
+               
+            }
                 &--number{
-                    position: relative;
-                    left: 1rem;
-                    background-color: $color-primary;
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 100%;
-                    color: #fff;
-                    padding: 9px 9px ;
-                    font-weight: bold;
-                    width: 32px;
-                    height: 32px;
-                    border: 2px solid $color-primary;
+                    color: #FFF;
+                    border: 1px solid $color-primary;
+                    background-color: $color-primary;
+                    width: 2rem;
+                    height: 2rem;
+                    position: relative;
+                    right: 1rem;
                 }
 
                 &--txt {
                     text-align: center;
-                    font: bold 20px "roboto-light", sans-serif;
-                    background-color: $gray-header;
-                    border-radius: 20px;
-                    border: none;
-                    padding: 20px;
-                    width: 350px;
-                    margin-bottom: 25px;
-                    text-align: left;
-                    cursor: pointer;
+                    font: bold 1.2rem "Roboto", sans-serif;
+                    margin-left: 10px;
                     
                 }
-
-                &:hover {
-                    button {
-                        background-color: lighten($color-primary, 32%);
-                        cursor: pointer;
-                    }
-                    .choice__icons {
-                    color: $color-primary;
-                    filter: brightness(95%);
-                    }
+                &--icons{
+                    padding-right: 20px;
+                    font-size: 1.3rem;
+                    color: darken($gray-header, 45%);
                 }
+
+                
                 @include Tablets {
                     display: flex;
                     flex-flow: column wrap;
@@ -74,19 +81,9 @@
                 justify-content: center;
                 align-items: center;
             }
+            
+        
     }
 }
 
-    
 
-
-.choice {
-    &__icons {
-        position: relative;
-        left: 1rem;
-        padding-right: 2rem;
-        font-size: 1.2rem;
-        color: darken($gray-header, 40%);
-
-    }
-}

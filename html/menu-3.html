@@ -11,7 +11,7 @@
       <!-- Intégration des icones FontAwesome -->
       <script src="https://kit.fontawesome.com/327560cffb.js" crossorigin="anonymous"></script>
    </head>
-   <body>
+   <body id="backmenus">
     <header class="header">
  <div class="header__heading">
              <a href="../index.html">
@@ -24,10 +24,8 @@
      <img class="header__img" src="../img/restaurants/3-a-la-francaise.jpg" alt="menu-3">
    </header>
     <main class="Restaurants">
-        <div class="Restaurants__Name">
-        <h2>À la française</h2>
+        <h2 class="Restaurants__name">À la française</h2>
         <i class="far fa-heart Restaurants__name--icon"></i>
-        </div>
         <aside class="Restaurants__Menus Restaurants__entrees"> 
 
             <h2 class="Restaurants__Menus--Title">Entrées</h2>
@@ -36,7 +34,7 @@
                 <h3>Tartare de poulpe acidulé</h3>
                 <p>Aux zestes d'orange</p>
                 <div class="cards__euros">25&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -44,7 +42,7 @@
                 <h3>Velouté de légumes d'antan</h3>
                 <p>Carotte, panais, topinambour</p>
                 <div class="cards__euros">35&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -52,7 +50,7 @@
                 <h3>Soupe à l'oignon</h3>
                 <p>Revisitée</p>
                 <div class="cards__euros">20&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -67,7 +65,7 @@
                 <h3>Coquilles Saint-Jacques</h3>
                 <p>Accompagnées d'une purée de panais</p>
                 <div class="cards__euros">40&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -75,7 +73,7 @@
                 <h3>Magret de canard</h3>
                 <p>Et parmentier de pommes de terre</p>
                 <div class="cards__euros">35&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -83,7 +81,7 @@
                 <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                 <p>Sur son lit de gnocchis aux légumes</p>
                 <div class="cards__euros">44&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -98,7 +96,7 @@
                 <h3>Pétales de violettes glacés</h3>
                 <p>Et purée de noisettes</p>
                 <div class="cards__euros">18&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -106,7 +104,7 @@
                 <h3>Fondant au chocolat</h3>
                 <p>Revisité</p>
                 <div class="cards__euros">22&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
@@ -114,22 +112,22 @@
                 <h3>Millefeuille croustillant</h3>
                 <p>Myrtilles et pâte d’amande</p>
                 <div class="cards__euros">23&euro;</div>
-                <div class="Restaurants__menus-boxes--check">
+                <div class="cards__check">
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
     
            </aside>
 
-        <div class="order">
-            <a href="#">Commander</a>
-        </div>
+           <a class="order">
+            <p>Commander</p>
+        </a>
  
     </main>
 
 
    <footer>
-    <h5>ohmyfood</h5>
+    <h5 class="footer__brand">ohmyfood</h5>
 
     <ul>
         <li>
