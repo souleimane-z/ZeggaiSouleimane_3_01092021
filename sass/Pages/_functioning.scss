@@ -5,6 +5,7 @@
     justify-content: center;
     margin-left: auto;
     padding-bottom: 2rem;
+    width: 100%;
     &__title {
         padding-top: 10px;
         position: relative;
@@ -40,6 +41,10 @@
                 }
                
             }
+            @include Tablets {
+                width: 270px;
+                margin: 15px;
+            }
                 &--number{
                     display: flex;
                     justify-content: center;
@@ -52,26 +57,33 @@
                     height: 2rem;
                     position: relative;
                     right: 1rem;
+                    @include Tablets {
+                        right: 1.5rem;
+                    }
+
                 }
 
                 &--txt {
                     text-align: center;
                     font: bold 1.2rem "Roboto", sans-serif;
                     margin-left: 10px;
+
+                    @include Tablets {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 15px;
+                    }
                     
                 }
                 &--icons{
                     padding-right: 20px;
                     font-size: 1.3rem;
                     color: darken($gray-header, 45%);
-                }
-
-                
-                @include Tablets {
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
-                    align-items: center;
+                    @include Tablets {
+                        padding: 0 20px 0 10px;
+                        margin: 0;
+                        font-size: 20px;
+                    }
                 }
             }
             

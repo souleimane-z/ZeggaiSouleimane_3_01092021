@@ -5,6 +5,7 @@ body {
     margin: 0;
     font: 15px "roboto", sans-serif;
     background-color: $gray-header;
+    overflow-x: hidden;
 }
 
 a {

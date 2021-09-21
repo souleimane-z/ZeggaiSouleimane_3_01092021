@@ -4,7 +4,7 @@
     @include headerCenter;
     width: 100%;
 
-    flex-flow: row wrap;
+
     &__title{
         padding-top: 10px;
         @include headerCenter;
@@ -22,11 +22,14 @@
                 height: 320px;
                 border-radius: 2rem;
                 box-shadow: $shadowsCards;
-
+    
+                @include Tablets {
+                    width: 38rem;
+                }
                     &--new{
                     position: absolute;
                     margin-left: 32rem;
-                    Z-index: 1000;
+                    z-index: 99;
                     width: 5.5rem;
                     height: 2rem;
                     background-color: $color-tertiary;
@@ -36,6 +39,7 @@
                     color: darken($color-tertiary, 40%);
                     font-weight: bold;
                     border-radius: 3px;
+
                     }
 
                     &--img{
@@ -52,7 +56,7 @@
                         
                         position: relative;
                         top: -1.5rem;
-                        margin-left: 10px;
+                        margin-left: 22px;
                         font-weight: bold;
                         font-size: 1.4rem;
                         align-items: center;
