@@ -36,6 +36,7 @@
 
 //  Menus des Reataurants
 #backmenus { background-color: #FFF;}
+
 .Restaurants {
     display: flex;
     flex-flow: row nowrap;
@@ -49,13 +50,28 @@
     padding-bottom: 13rem;
     border-radius: 1rem;
 
+    @include Tablets {
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    @include Smartphones {
+        max-width: 760px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
     &__name {
     position: absolute;
     left: 1rem ;
     margin-bottom: 2rem;
-        font-family: "Shrikhand", "cursive";
-
-        
+    font-family: "Shrikhand", "cursive";
+    
+    @include Tablets {
+        margin-right: 50px;
+    }
 
         &--icon {
             position: absolute;
@@ -74,6 +90,10 @@
                     opacity: 1;
                     transition-duration: 500ms;
                 }
+            
+            @include Tablets {
+                margin-right: 50px;
+            }
         }
     }
 
@@ -96,7 +116,9 @@
                 left: 0;
                 top: 2rem;
               }
-            
+            @include Smartphones {
+                margin: 3rem 0 1.5rem 0;
+            }
         }
     
     

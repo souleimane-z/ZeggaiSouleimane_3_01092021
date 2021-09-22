@@ -29,6 +29,7 @@
 /*Règles Générales de la page*/
 body {
   width: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font: 15px "roboto", sans-serif;
@@ -42,31 +43,31 @@ a {
 }
 
 /*Footer*/
-footer {
-  padding: 0;
-  width: 100%;
-  height: auto;
+.footer {
   background-color: #353535;
-  text-decoration: none;
+  color: #FFF;
+  padding: 1rem;
 }
-footer > ul {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  list-style: none;
-}
-footer > ul > li > a {
-  color: white;
-  text-decoration: none;
-}
-
 .footer__brand {
   font: 20px "shrikhand", sans-serif;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
+  font-size: 29px;
+  margin: 0 0 0 1rem;
   color: #FFF;
+}
+.footer__ul {
+  list-style: none;
+  margin-left: -1rem;
+  margin-bottom: 10px;
+}
+.footer__ul li {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+}
+.footer__ul > li > a {
+  color: #FFF;
+}
+.footer__ul > li > a > i {
+  margin-right: 10px;
 }
 
 /*Header pour toutes les pages*/
@@ -153,11 +154,32 @@ footer > ul > li > a {
   padding-bottom: 13rem;
   border-radius: 1rem;
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .Restaurants {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 760px) {
+  .Restaurants {
+    max-width: 760px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
 .Restaurants__name {
   position: absolute;
   left: 1rem;
   margin-bottom: 2rem;
   font-family: "Shrikhand", "cursive";
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .Restaurants__name {
+    margin-right: 50px;
+  }
 }
 .Restaurants__name--icon {
   position: absolute;
@@ -176,6 +198,11 @@ footer > ul > li > a {
   opacity: 1;
   transition-duration: 500ms;
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .Restaurants__name--icon {
+    margin-right: 50px;
+  }
+}
 
 .Restaurants__Menus--Title {
   position: relative;
@@ -191,6 +218,11 @@ footer > ul > li > a {
   position: absolute;
   left: 0;
   top: 2rem;
+}
+@media (max-width: 760px) {
+  .Restaurants__Menus--Title {
+    margin: 3rem 0 1.5rem 0;
+  }
 }
 .Restaurants__Menus-boxes {
   position: relative;
