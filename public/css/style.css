@@ -131,10 +131,10 @@ a {
   font-size: 1.3rem;
 }
 .header__img {
-  position: relative;
-  width: 100%;
-  height: 32rem;
   object-fit: cover;
+  width: 100%;
+  position: relative;
+  height: 32rem;
 }
 
 #backmenus {
@@ -152,18 +152,21 @@ a {
   height: auto;
   margin: auto;
   padding-bottom: 13rem;
+  overflow-x: hidden;
   border-radius: 1rem;
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .Restaurants {
     max-width: 1200px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    width: 96.5%;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 740px) {
   .Restaurants {
+    min-width: 516px;
     max-width: 760px;
     display: flex;
     justify-content: center;
@@ -176,9 +179,10 @@ a {
   margin-bottom: 2rem;
   font-family: "Shrikhand", "cursive";
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .Restaurants__name {
     margin-right: 50px;
+    margin-left: 50px;
   }
 }
 .Restaurants__name--icon {
@@ -198,7 +202,7 @@ a {
   opacity: 1;
   transition-duration: 500ms;
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .Restaurants__name--icon {
     margin-right: 50px;
   }
@@ -219,7 +223,7 @@ a {
   left: 0;
   top: 2rem;
 }
-@media (max-width: 760px) {
+@media (max-width: 740px) {
   .Restaurants__Menus--Title {
     margin: 3rem 0 1.5rem 0;
   }
@@ -334,7 +338,7 @@ a {
   color: #9356DC;
   filter: brightness(95%);
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices {
     width: 270px;
     margin: 15px;
@@ -353,7 +357,7 @@ a {
   position: relative;
   right: 1rem;
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--number {
     right: 1.5rem;
   }
@@ -363,7 +367,7 @@ a {
   font: bold 1.2rem "Roboto", sans-serif;
   margin-left: 10px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--txt {
     margin: 0;
     padding: 0;
@@ -375,14 +379,14 @@ a {
   font-size: 1.3rem;
   color: gray;
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--icons {
     padding: 0 20px 0 10px;
     margin: 0;
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul {
     display: flex;
     flex-flow: column nowrap;
@@ -461,7 +465,7 @@ a {
   border-radius: 2rem;
   box-shadow: 17px 24px 19px 0px rgba(53, 53, 53, 0.21);
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
   .cardSection__cards__Content {
     width: 38rem;
   }

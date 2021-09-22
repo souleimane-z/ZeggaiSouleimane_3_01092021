@@ -21,13 +21,13 @@
 /*Breakpoints : Responsive*/
 
 @mixin Tablets {
-    @media only screen and (min-width : 768px) and (max-width : 1200px) {
+    @media only screen and (min-width : 741px) and (max-width : 1200px) {
         @content;
         }
 }
 
 @mixin Smartphones {
-    @media (max-width: 760px) {
+    @media (max-width: 740px) {
         @content;
         }
 }
