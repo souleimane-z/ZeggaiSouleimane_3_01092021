@@ -5,6 +5,10 @@
     color: #FFF;
     padding: 1rem;
 
+    @include Smartphones {
+        margin-top: 6rem;
+    }
+
         &__brand {
             @include shrikhand;
             font-size: 29px;

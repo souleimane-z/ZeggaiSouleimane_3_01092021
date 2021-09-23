@@ -6,7 +6,6 @@
     padding-bottom: 2rem;
     width: 100%;
 
-    
 
     &__title {
         padding-top: 10px;
@@ -33,6 +32,8 @@
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            padding: 0;
         }
         
         &__choices {    
@@ -59,11 +60,14 @@
                
             }
             @include Tablets {
-                width: 270px;
+                margin: 0;
+                width: 300px;
                 margin: 15px;
             }
             @include Smartphones {
-                width: 270px;
+                margin: 0;
+                padding: 0;
+                width: 290px;
                 margin: 15px;
             }
                 &--number{
@@ -79,7 +83,7 @@
                     position: relative;
                     right: 1rem;
                     @include Tablets {
-                        right: 1.5rem;
+                        right: 2rem;
                     }
                     @include Smartphones {
                         right: 1.4rem;
@@ -99,7 +103,7 @@
                     }
                     @include Smartphones {
                         margin: 0;
-                        padding: 0;
+                        padding: 0 1rem 0 0;
                         font-size: 16px;
                     }
                 }

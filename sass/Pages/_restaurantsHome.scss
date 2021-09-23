@@ -4,20 +4,24 @@
     @include headerCenter;
     width: 100%;
 
+    @include Smartphones {
+        display: flex;
+        justify-items: center;
+    }
+
 
     &__title{
         padding-top: 10px;
         @include headerCenter;
         @include titleBold;
+        @include Smartphones { 
+        justify-content: flex-start;
+        margin-left: 7px;
+        padding-top: 40px;}
     }
         &__cards {
             @include headerCenter;
             flex-flow: row wrap;
-
-            @include Smartphones {
-                display: inline-grid;
-                justify-items: center;
-            }
 
 
             &__Content{
@@ -33,9 +37,11 @@
                 }
 
                 @include Smartphones {
-                    width: 95%;
-                    height: 270px;
-                    justify-content: center;
+                    padding: 0;
+                    margin: 1rem 0;
+                    width: 23rem;
+                    height: 260px;
+                    
                 }
                     &--new{
                     position: absolute;
@@ -54,7 +60,7 @@
                     @include Smartphones {
                         position: absolute;
                         z-index: 999;
-                        right: 50px;
+                        right: 4rem;
                     }
 
                     }

@@ -11,9 +11,6 @@
     z-index: 1;
     background-color: #FFF;
 
-    @include Tablets {
-        
-    }
 
         &--arrow {
             position: absolute;
@@ -31,6 +28,10 @@
         width: 100%;
         position: relative;
         height: 32rem;
+
+        @include Smartphones {
+            height: 20rem;
+        }
     }
 
 
@@ -39,7 +40,6 @@
 
 
 //  Menus des Reataurants
-#backmenus { background-color: #FFF;}
 
 .Restaurants {
     display: flex;
@@ -52,8 +52,7 @@
     height: auto;
     margin: auto;
     padding-bottom: 13rem;
-    overflow-x: hidden;
-    border-radius: 1rem;
+    border-radius: 2rem;
 
     @include Tablets {
         max-width: 1200px;
@@ -63,18 +62,23 @@
         width: 96.5%;
     }
     @include Smartphones {
-        min-width: 516px;
-        max-width: 760px;
+        padding-bottom: 15rem;
+        max-width: 741px;
+        height: 1130px;
+        width: 100%;
+        top: -5rem;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-flow: row wrap;
+        margin: 0;
+        padding: 0;
     }
 
     &__name {
     position: absolute;
     left: 1rem ;
     margin-bottom: 2rem;
-    font-family: "Shrikhand", "cursive";
+    font-family: "Shrikhand";
     
     @include Tablets {
         margin-right: 50px;
@@ -102,6 +106,9 @@
             @include Tablets {
                 margin-right: 50px;
             }
+            @include Smartphones {
+                margin-left: 90%;
+            }
         }
     }
 
@@ -109,6 +116,11 @@
 }
 
 .Restaurants__Menus {
+
+    @include Smartphones {
+        margin-top: 0;
+    }
+
 
         &--Title {
             position: relative;
@@ -125,7 +137,7 @@
                 top: 2rem;
               }
             @include Smartphones {
-                margin: 3rem 0 1.5rem 0;
+                margin-top: 0;
             }
         }
     
@@ -143,6 +155,10 @@
             overflow: hidden;
             cursor: pointer;
 
+            @include Smartphones {
+                width: 95%;
+                margin-bottom: 0;
+            }
             h3{
                 
                 position: relative;
@@ -152,6 +168,8 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+
+                @include Smartphones { font-size: 1rem;}
             }
 
             p {
@@ -188,9 +206,10 @@
     top: 29rem;
     right: 39em;
     height: 1em;
+    width: 10rem;
     padding: 1rem;
-    background-image: linear-gradient(90deg, $color-secondary, $color-primary);
-    border-radius: 1.2rem;
+    background-image: linear-gradient(0deg, $color-primary, $color-secondary );
+    border-radius: 2rem;
 
         p {
             position: relative;
@@ -200,5 +219,22 @@
     &:hover {
     cursor: pointer;
     box-shadow: $shadows;
+    }
+
+    @include Tablets {
+        left: 18rem;
+        top: 69rem;
+    }
+
+    @include Smartphones {
+        left: 7rem;
+        top: 73rem;
+        height: 1rem;
+    }
+}
+
+.Rest-Pres {
+    @include Smartphones {
+        width: 100%;
     }
 }

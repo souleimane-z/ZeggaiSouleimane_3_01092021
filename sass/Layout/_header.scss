@@ -8,6 +8,10 @@
         @include headerCenter;
         flex-basis: 100%;
     }
+
+    @include Smartphones {
+        padding: 3px;
+    }
 &__location {
     @include headerCenter;
     background-color: $gray-location;
