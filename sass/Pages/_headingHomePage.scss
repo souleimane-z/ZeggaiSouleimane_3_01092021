@@ -9,10 +9,20 @@
     &__principal {
         @include headerCenter;
         @include titleHeader; 
+
+        @include Smartphones {
+            text-align: center;
+            font-size: 25px;
+        }
     }
     >h4 {
         @include headerCenter;
         font: 20px "Roboto-Light", sans-serif;
+        
+        @include Smartphones {
+            text-align: center;
+            font-size: 19px;
+        }
 
     }
     
@@ -23,19 +33,19 @@
 &--button{
     position: relative;
     border: none;
-        border-radius: 30px;
-        background-image: linear-gradient(0deg, $color-primary,$color-secondary);
-        color: $gray-header;
-        padding: 15px;
-        text-align: center;
-        text-decoration: none;
-        font: bold 22px "roboto",sans-serif;
-        width: 19rem;
-        height: 4rem;
+    border-radius: 30px;
+    background-image: linear-gradient(0deg, $color-primary,$color-secondary);
+    color: $gray-header;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 19px "Roboto",sans-serif;
+    width: 19rem;
+    height: 4rem;
 
         &:hover{
             cursor: pointer;
-            opacity: 75%;
+            opacity: 0.80;
             box-shadow: $shadows;
           }
     }

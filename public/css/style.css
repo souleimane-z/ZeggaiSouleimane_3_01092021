@@ -298,7 +298,6 @@ a {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-left: auto;
   padding-bottom: 2rem;
   width: 100%;
 }
@@ -315,6 +314,22 @@ a {
   flex-flow: row nowrap;
   justify-content: center;
   position: relative;
+}
+@media only screen and (min-width: 741px) and (max-width: 1200px) {
+  .functioning .functioning-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 740px) {
+  .functioning .functioning-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .functioning .functioning-ul__choices {
   display: flex;
@@ -344,6 +359,12 @@ a {
     margin: 15px;
   }
 }
+@media (max-width: 740px) {
+  .functioning .functioning-ul__choices {
+    width: 270px;
+    margin: 15px;
+  }
+}
 .functioning .functioning-ul__choices--number {
   display: flex;
   justify-content: center;
@@ -362,6 +383,11 @@ a {
     right: 1.5rem;
   }
 }
+@media (max-width: 740px) {
+  .functioning .functioning-ul__choices--number {
+    right: 1.4rem;
+  }
+}
 .functioning .functioning-ul__choices--txt {
   text-align: center;
   font: bold 1.2rem "Roboto", sans-serif;
@@ -371,7 +397,14 @@ a {
   .functioning .functioning-ul__choices--txt {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 740px) {
+  .functioning .functioning-ul__choices--txt {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
   }
 }
 .functioning .functioning-ul__choices--icons {
@@ -384,14 +417,6 @@ a {
     padding: 0 20px 0 10px;
     margin: 0;
     font-size: 20px;
-  }
-}
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
-  .functioning .functioning-ul {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -407,11 +432,23 @@ a {
   align-items: center;
   font: bold 32px "Roboto-bold", sans-serif;
 }
+@media (max-width: 740px) {
+  .header__heading__quote__principal {
+    text-align: center;
+    font-size: 25px;
+  }
+}
 .header__heading__quote > h4 {
   display: flex;
   justify-content: center;
   align-items: center;
   font: 20px "Roboto-Light", sans-serif;
+}
+@media (max-width: 740px) {
+  .header__heading__quote > h4 {
+    text-align: center;
+    font-size: 19px;
+  }
 }
 
 .header__heading__quote__explore {
@@ -428,13 +465,13 @@ a {
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  font: bold 22px "roboto", sans-serif;
+  font: bold 19px "Roboto", sans-serif;
   width: 19rem;
   height: 4rem;
 }
 .header__heading__quote__explore--button:hover {
   cursor: pointer;
-  opacity: 75%;
+  opacity: 0.8;
   box-shadow: 0px 0px 19px 0px rgba(53, 53, 53, 0.38);
 }
 
@@ -458,6 +495,12 @@ a {
   align-items: center;
   flex-flow: row wrap;
 }
+@media (max-width: 740px) {
+  .cardSection__cards {
+    display: inline-grid;
+    justify-items: center;
+  }
+}
 .cardSection__cards__Content {
   background-color: #FFF;
   width: 40rem;
@@ -468,6 +511,13 @@ a {
 @media only screen and (min-width: 741px) and (max-width: 1200px) {
   .cardSection__cards__Content {
     width: 38rem;
+  }
+}
+@media (max-width: 740px) {
+  .cardSection__cards__Content {
+    width: 95%;
+    height: 270px;
+    justify-content: center;
   }
 }
 .cardSection__cards__Content--new {
@@ -484,6 +534,13 @@ a {
   font-weight: bold;
   border-radius: 3px;
 }
+@media (max-width: 740px) {
+  .cardSection__cards__Content--new {
+    position: absolute;
+    z-index: 999;
+    right: 50px;
+  }
+}
 .cardSection__cards__Content--img {
   object-fit: cover;
   width: 100%;
@@ -492,6 +549,12 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 740px) {
+  .cardSection__cards__Content--img {
+    width: 100%;
+    height: 170px;
+  }
 }
 .cardSection__cards__Content--Name {
   position: relative;

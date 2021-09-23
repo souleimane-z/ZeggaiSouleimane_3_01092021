@@ -3,9 +3,11 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin-left: auto;
     padding-bottom: 2rem;
     width: 100%;
+
+    
+
     &__title {
         padding-top: 10px;
         position: relative;
@@ -18,7 +20,21 @@
         flex-flow: row nowrap;
         justify-content: center;
         position: relative;
-    
+
+        @include Tablets {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include Smartphones {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
         &__choices {    
             display: flex;
             flex-flow: row nowrap;
@@ -39,9 +55,14 @@
                 color: $color-primary;
                 filter: brightness(95%);
                 }
+
                
             }
             @include Tablets {
+                width: 270px;
+                margin: 15px;
+            }
+            @include Smartphones {
                 width: 270px;
                 margin: 15px;
             }
@@ -60,6 +81,9 @@
                     @include Tablets {
                         right: 1.5rem;
                     }
+                    @include Smartphones {
+                        right: 1.4rem;
+                    }
 
                 }
 
@@ -71,9 +95,13 @@
                     @include Tablets {
                         margin: 0;
                         padding: 0;
-                        font-size: 15px;
+                        font-size: 16px;
                     }
-                    
+                    @include Smartphones {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 16px;
+                    }
                 }
                 &--icons{
                     padding-right: 20px;
@@ -85,13 +113,6 @@
                         font-size: 20px;
                     }
                 }
-            }
-            
-            @include Tablets {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
             }
             
         
