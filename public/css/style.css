@@ -26,6 +26,14 @@
 /* couleurs utilisées */
 /*Mixins : mise en forme */
 /*Breakpoints : Responsive*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*Règles Générales de la page*/
 body {
   width: 100%;
@@ -479,6 +487,20 @@ a {
     margin: 0;
     font-size: 20px;
   }
+}
+
+.loader {
+  border: 18px solid #F3F3F3;
+  border-top: 18px solid #9356DC;
+  border-bottom: 18px solid #99E2D0;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  animation: spin 1.5s linear infinite;
+  position: absolute;
+  animation-delay: 0.5s;
+  top: 45%;
+  left: 45%;
 }
 
 /*Header: texte home-page*/
