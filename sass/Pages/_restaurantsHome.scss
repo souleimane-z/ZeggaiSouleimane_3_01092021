@@ -41,7 +41,10 @@
                     margin: 1rem 0;
                     width: 23rem;
                     height: 260px;
-                    
+                }
+
+                @include smallPhones {
+                    width: 22rem;
                 }
                     &--new{
                     position: absolute;
@@ -61,6 +64,9 @@
                         position: absolute;
                         z-index: 999;
                         right: 4rem;
+                    }
+                    @include smallPhones {
+                        right: 3rem;
                     }
 
                     }

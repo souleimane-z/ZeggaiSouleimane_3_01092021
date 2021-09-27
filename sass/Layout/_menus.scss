@@ -154,10 +154,14 @@
             left: 0;
             overflow: hidden;
             cursor: pointer;
+            text-overflow: ellipsis;
 
             @include Smartphones {
                 width: 95%;
                 margin-bottom: 0;
+            }
+            @include smallPhones {
+                margin: 1rem;
             }
             h3{
                 
@@ -231,6 +235,10 @@
         top: 73rem;
         height: 1rem;
     }
+
+    @include smallPhones {
+        left: 5.5rem;
+    }
 }
 
 .Rest-Pres {
@@ -238,3 +246,5 @@
         width: 100%;
     }
 }
+
+

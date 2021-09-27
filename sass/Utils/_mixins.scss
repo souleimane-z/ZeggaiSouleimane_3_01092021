@@ -15,6 +15,13 @@
     font : 20px "shrikhand", sans-serif;
 }
 
+// animation des menus
+
+@mixin menusAppear($delay) {
+    animation: menusAppear 3s;
+    animation-timing-function: cubic-bezier(.5,1.9,.5,.3);
+    animation-delay: $delay;
+}
 
 
 
@@ -30,5 +37,11 @@
     @media (max-width: 740px) {
         @content;
         }
+}
+
+@mixin smallPhones {
+    @media (max-width: 376px) {
+        @content;
+    }
 }
 
