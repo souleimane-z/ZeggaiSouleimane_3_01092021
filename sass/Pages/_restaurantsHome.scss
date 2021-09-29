@@ -22,6 +22,8 @@
         &__cards {
             @include headerCenter;
             flex-flow: row wrap;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
 
 
             &__Content{
@@ -31,6 +33,7 @@
                 height: 320px;
                 border-radius: 2rem;
                 box-shadow: $shadowsCards;
+                margin: 2.5rem 1rem;
     
                 @include Tablets {
                     width: 38rem;
@@ -44,6 +47,7 @@
                 }
 
                 @include smallPhones {
+                    margin: 1.2rem 0;
                     width: 22rem;
                 }
                     &--new{

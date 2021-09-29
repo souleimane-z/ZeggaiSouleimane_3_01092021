@@ -49,23 +49,24 @@
 
 // Check hover
 .cards {
-    
+    &:hover {
+        overflow: visible;
+    }
     &__check {
-        z-index: 100;
-        background-color: $color-tertiary;
+        background-color: #99E2D0;
         position: relative;
-        top: -7.1rem;
+        top: -5.5rem;
         left: 23rem;
         width: 6rem;
         height: 5rem;
         display: flex;
-        opacity: 1;
-        border-radius : 0 1rem 1rem 0;
+        border-radius: 0 1rem 1rem 0;
         align-items: center;
         justify-content: center;
-        transition-duration: 1.5s;
+        transition-duration: 1s;
         &:hover {
             transform: translateX(-4.5rem);
+            
         }
 
         &--icon {

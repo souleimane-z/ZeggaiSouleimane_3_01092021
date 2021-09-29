@@ -430,36 +430,37 @@ a {
 /* animation des menus */
 .Restaurants__entrees {
   animation: menusAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.9, 0.5, 0.3);
+  animation-timing-function: cubic-bezier(0.5, 1.2, 0.6, 1);
   animation-delay: 0.1s;
 }
 
 .Restaurants__dishes {
   animation: menusAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.9, 0.5, 0.3);
+  animation-timing-function: cubic-bezier(0.5, 1.2, 0.6, 1);
   animation-delay: 1s;
 }
 
 .Restaurants__desserts {
   animation: menusAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.9, 0.5, 0.3);
+  animation-timing-function: cubic-bezier(0.5, 1.2, 0.6, 1);
   animation-delay: 1.5s;
 }
 
+.cards:hover {
+  overflow: visible;
+}
 .cards__check {
-  z-index: 100;
   background-color: #99E2D0;
   position: relative;
-  top: -7.1rem;
+  top: -5.5rem;
   left: 23rem;
   width: 6rem;
   height: 5rem;
   display: flex;
-  opacity: 1;
   border-radius: 0 1rem 1rem 0;
   align-items: center;
   justify-content: center;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
 }
 .cards__check:hover {
   transform: translateX(-4.5rem);
@@ -712,6 +713,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 .cardSection__cards__Content {
   background-color: #FFF;
@@ -719,6 +722,7 @@ a {
   height: 320px;
   border-radius: 2rem;
   box-shadow: 17px 24px 19px 0px rgba(53, 53, 53, 0.21);
+  margin: 2.5rem 1rem;
 }
 @media only screen and (min-width: 741px) and (max-width: 1200px) {
   .cardSection__cards__Content {
@@ -735,6 +739,7 @@ a {
 }
 @media (max-width: 376px) {
   .cardSection__cards__Content {
+    margin: 1.2rem 0;
     width: 22rem;
   }
 }
