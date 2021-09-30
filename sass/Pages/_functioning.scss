@@ -15,32 +15,25 @@
     }
 
     .functioning-ul {
-        display: flex;
+        @include headerCenter;
         flex-flow: row nowrap;
-        justify-content: center;
         position: relative;
 
         @include Tablets {
-            display: flex;
+            @include headerCenter;
             flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
         }
 
         @include Smartphones {
-            display: flex;
+            @include headerCenter;
             flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
             width: 100%;
             padding: 0;
         }
         
-        &__choices {    
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+        &__choices {
+            flex-flow: row nowrap;  
+            @include headerCenter;
             width: auto;
             height: 4rem;
             margin-right: 3rem;

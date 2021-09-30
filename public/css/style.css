@@ -512,31 +512,32 @@ a {
 }
 .functioning .functioning-ul {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
   position: relative;
 }
 @media only screen and (min-width: 741px) and (max-width: 1200px) {
   .functioning .functioning-ul {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
   }
 }
 @media (max-width: 740px) {
   .functioning .functioning-ul {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
     width: 100%;
     padding: 0;
   }
 }
 .functioning .functioning-ul__choices {
-  display: flex;
   flex-flow: row nowrap;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
