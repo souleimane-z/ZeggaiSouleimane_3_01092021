@@ -176,17 +176,6 @@
                 @include Smartphones { font-size: 1rem;}
             }
 
-            p {
-                align-items: center;
-                position: relative;
-                top: -0.8rem;
-                left: 1rem;
-                font-weight: lighter;
-                width: 20rem;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
 
             
         }
@@ -194,16 +183,28 @@
 }
 
 .cards {
-    &__euros {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        position: relative;
-        top: -2.8rem;
-        left: -1rem;
+    &__spacebetween {
+        >p{
+            align-items: center;
+            position: relative;
+            top: -0.8rem;
+            left: 1rem;
+            font-weight: lighter;
+            width: 20rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
 }
-
+.prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    top: -3.8rem;
+    left: 2rem;
+}
 .order {
     @include headerCenter;
     position: absolute;
@@ -226,8 +227,8 @@
     }
 
     @include Tablets {
-        left: 18rem;
-        top: 69rem;
+        left: 28rem;
+        top: 49rem;
     }
 
     @include Smartphones {
