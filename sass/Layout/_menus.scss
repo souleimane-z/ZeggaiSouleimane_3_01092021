@@ -40,7 +40,6 @@
 
 
 //  Menus des Reataurants
-
 .Restaurants {
     display: flex;
     flex-flow: row nowrap;
@@ -53,192 +52,188 @@
     margin: auto;
     padding-bottom: 13rem;
     border-radius: 2rem;
-
-    @include Tablets {
-        max-width: 1200px;
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        width: 96.5%;
-    }
-    @include Smartphones {
-        padding-bottom: 15rem;
-        max-width: 741px;
-        height: 1130px;
-        width: 100%;
-        top: -5rem;
-        display: flex;
-        justify-content: flex-start;
-        flex-flow: row wrap;
-        margin: 0;
-        padding: 0;
-    }
-
     &__name {
-    position: absolute;
-    left: 1rem ;
-    margin-bottom: 2rem;
-    font-family: "Shrikhand";
-    
-    @include Tablets {
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-
-        &--icon {
-            position: absolute;
-            top: 1.5rem;
-            margin-left: 95%;
-            cursor: pointer;
-            z-index: 1;
-            font-size: 30px;
-
-                &:hover{
-                    font-weight: bold;
-                    background: -webkit-linear-gradient($color-primary, $color-secondary);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    opacity: 1;
-                    transition-duration: 500ms;
-                }
-            
-            @include Tablets {
-                margin-right: 50px;
-            }
-            @include Smartphones {
-                margin-left: 90%;
-            }
+        position: absolute;
+        left: 1rem ;
+        padding-bottom: 2rem;
+        font-family: "Shrikhand";
+        
+        @include Tablets {
+            margin-right: 50px;
+            margin-left: 50px;
         }
-    }
-
-
-}
-
-.Restaurants__Menus {
-
-    @include Smartphones {
-        margin-top: 0;
-    }
-
-
-        &--Title {
-            position: relative;
-            top: 4rem;
-            left: 2rem;
-            font-weight: lighter;
-            &::after {
-                content: "";
-                width: 2.5rem;
-                height: 0.25rem;
-                background-color: $color-tertiary;
+    
+            &--icon {
                 position: absolute;
-                left: 0;
-                top: 2rem;
-              }
-            @include Smartphones {
-                margin-top: 0;
+                top: 1.5rem;
+                margin-left: 95%;
+                cursor: pointer;
+                z-index: 1;
+                font-size: 30px;
+    
+                    &:hover{
+                        font-weight: bold;
+                        background: -webkit-linear-gradient($color-primary, $color-secondary);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 1;
+                        transition-duration: 500ms;
+                    }
+                
+                @include Tablets {
+                    margin-right: 50px;
+                }
+                @include Smartphones {
+                    margin-left: 90%;
+                }
             }
         }
-    
-    
-        &-boxes {
-            position: relative;
-            background-color: #FFFFFF;
-            box-shadow: $shadowsCards;
-            margin: 1rem 1.5rem 0 2rem;
-            border-radius: 1rem;
-            width: 23rem;
-            height: 4.6rem;
-            top: 4rem;
-            left: 0;
+}
+.cardsMenus{
+    margin-top: 2rem;
+    background-color: $gray-header;
+    padding: 15px 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 2rem;
+}
+.Menus {
+    &__title {
+        text-transform: uppercase;
+        color: $gray-footer;
+        font-weight: bold;
+        font-family: "Roboto-thin";
+        font-size: 20px;
+        text-align: left;
+        position: relative;
+        left: 0.5rem;
+        &::after {
+            content: "";
+            width: 2.5rem;
+            height: 0.25rem;
+            background-color: $color-tertiary;
+            position: absolute;
+            display: flex;
+          }
+    }
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 15px;
+    text-align: left;
+    background-color: #FFF;
+    box-shadow: $shadowsCards;
+    padding: 5px 10px;
+    margin: 10px 2px;
+    height: 50px;
+    width: 20rem;
+    &:hover {
+        .cards__txt {
+            width: 75%;
             overflow: hidden;
-            cursor: pointer;
             text-overflow: ellipsis;
-
+            white-space: nowrap;
+        }
+        .cards__price {
+            width: 10%;
+        }
+        .cards__check--btn {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 3.35rem;
+            margin-top: -5px;
+            margin-left: 0;
             @include Smartphones {
-                width: 95%;
-                margin-bottom: 0;
+                width: 3.35rem;
             }
             @include smallPhones {
-                margin: 1rem;
+                width: 3.35rem;
             }
-            h3{
-                
-                position: relative;
-                top: 0;
-                left: 1rem;
-                width: 20rem;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-
-                @include Smartphones { font-size: 1rem;}
-            }
-
-
-            
         }
-
-}
-
-.cards {
-    &__spacebetween {
-        >p{
-            align-items: center;
-            position: relative;
-            top: -0.8rem;
-            left: 1rem;
-            font-weight: lighter;
-            width: 20rem;
+    }
+    .cards__txt {
+        display: block;
+        margin: 4px 2px;
+        line-height: 0.5rem;
+        width: 88%;
+        h3, p {
+            margin: 0;
+            padding: 8px;
+            font-size: 17px;
             overflow: hidden;
-            white-space: nowrap;
             text-overflow: ellipsis;
+            white-space: nowrap;
+            &::first-letter {
+                text-transform: uppercase;
+            }
         }
     }
+    .cards__price {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+    }
+    .cards__check--btn {
+        display: none;
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        border: 1px solid $color-tertiary;
+        padding: 0rem;
+        font-size: 1.2rem;
+        @include smallPhones {
+            width: 25rem;
+        }
+    }
+    .fa-check-circle {
+        color: #fff;
+    }
 }
-.prix {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-    top: -3.8rem;
-    left: 2rem;
-}
+
+
 .order {
-    @include headerCenter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 29rem;
-    right: 39em;
-    height: 1em;
     width: 10rem;
-    padding: 1rem;
-    background-image: linear-gradient(0deg, $color-primary, $color-secondary );
+    height: 3rem;
+    top: 25rem;
+    left: 33rem;
+    text-align: center;
     border-radius: 2rem;
-
-        p {
-            position: relative;
-            color: #FFF;
-            font: bold 18px "Roboto", sans-serif;
-        }
     &:hover {
-    cursor: pointer;
-    box-shadow: $shadows;
+        box-shadow: $shadows;
     }
-
+    &--btn {
+        background-image: linear-gradient(10deg, $color-primary, $color-secondary );
+        width: 200px;
+        border: none;
+        border-radius: 50px;
+        padding: 15px;
+        color: #fff;
+        font-weight: 500;
+        margin: 40px auto;
+        cursor: pointer;
+        font: bold 15px "Roboto-medium"
+    }
     @include Tablets {
-        left: 28rem;
-        top: 49rem;
+        top: 45rem;
+        left: 20rem;
     }
-
-    @include Smartphones {
-        left: 7rem;
-        top: 73rem;
-        height: 1rem;
+    @include Smartphones{
+        top: 65rem;
+        left: 8rem;
     }
-
-    @include smallPhones {
-        left: 5.5rem;
+    @include smallPhones{
+        top: 60rem;
+        left: 06rem;
     }
 }
 

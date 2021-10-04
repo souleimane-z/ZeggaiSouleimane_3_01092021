@@ -34,75 +34,45 @@
 
 /* animation des menus */
 
+
 // Appear
-.Restaurants__entrees {
-    @include menusAppear(0.1s);
+.one {
+    @include menusAppear(0s);
 }
 
-.Restaurants__dishes {
+.two {
+    @include menusAppear(0.5s);
+}
+
+.three {
     @include menusAppear(1s);
 }
-
-.Restaurants__desserts {
-    @include menusAppear(1.5s);
+.threefour {
+    @include menusAppear(1.3s)
 }
 
-// Check hover
+
+  // check btn hover
+
+.fa-check-circle {
+    animation: check 1s cubic-bezier(0.250, 0.460, 0.460, 0.940) both;
+}
+
+
+
+/*
 .cards {
-    display: flex;
-    overflow: visible;
-    &__check {
-        background-color: $color-tertiary;
-        position: relative;
-        left: 3rem;
-        display: flex;
-        border-radius: 0 1rem 1rem 0;
-        align-items: center;
-        justify-content: center;
-        transition-duration: 1s;
-        &:hover {
-            margin-right: 0;
-            transform: translateX(-2.5rem);
-            
-        }
-
-        &--icon {
-            height: 1.8rem;
-            width: 1.8rem;
-            background-color: #FFF;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            margin-left: 1rem;
-            margin-right: 1.75rem;
-            border-radius: 100px;
-            transform: rotate(180deg);
-            transition-duration: 1s;
-
-            &:hover {
-            transform: rotate(360deg);
-            }
-        }
-        i {
-            opacity: 1;
-            color: $color-tertiary;
-        }
-    }
-        &__euros {
-            &:hover{
-          left: -5rem;
-            }
-        }
-        & h3 {
-            &:hover{
-          width: 16rem;
-            }
-        }
-        & p {
-            &:hover{
-          width: 14rem;
-            }
-        }
-     
+    
+&:nth-child(1) {
+        animation-delay: 0s;
 }
+&:nth-child(2) {
+        animation-delay: 0.4s;
+
+}
+&:nth-child(3) {
+        animation-delay: 1.15s;
+}
+    animation: menuAppear 2.4s ease-in-out both;
+}
+*/
