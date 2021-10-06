@@ -46,11 +46,11 @@
     background-color: $gray-header;
     position: relative;
     top: -5rem;
-    max-width: 1280px;
+    max-width: 1350px;
     width: 100%;
     height: auto;
     margin: auto;
-    padding-bottom: 13rem;
+    padding-bottom: 3rem;
     border-radius: 2rem;
     &__name {
         position: absolute;
@@ -91,7 +91,7 @@
         }
 }
 .cardsMenus{
-    margin-top: 2rem;
+    margin-top: 3rem;
     background-color: $gray-header;
     padding: 15px 5px;
     display: flex;
@@ -127,10 +127,10 @@
     text-align: left;
     background-color: #FFF;
     box-shadow: $shadowsCards;
-    padding: 5px 10px;
+    padding: 8px 8px;
     margin: 10px 2px;
     height: 50px;
-    width: 20rem;
+    width: 22rem;
     &:hover {
         .cards__txt {
             width: 75%;
@@ -146,8 +146,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 60px;
-            width: 3.35rem;
+            height: 3.8rem;
+            width: 3.5rem;
             margin-top: -5px;
             margin-left: 0;
             @include Smartphones {
@@ -158,15 +158,15 @@
             }
         }
     }
-    .cards__txt {
+    &__txt {
         display: block;
         margin: 4px 2px;
         line-height: 0.5rem;
         width: 88%;
+        p{font-size: 13.5px;}
         h3, p {
             margin: 0;
             padding: 8px;
-            font-size: 17px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -175,18 +175,19 @@
             }
         }
     }
-    .cards__price {
+    &__price {
         display: flex;
         justify-content: center;
+        align-items: flex-end;
         width: 10%;
     }
-    .cards__check--btn {
+    &__check--btn {
         display: none;
         background-color: $color-tertiary;
         border-radius: 0 15px 15px 0;
         border: 1px solid $color-tertiary;
         padding: 0rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         @include smallPhones {
             width: 25rem;
         }

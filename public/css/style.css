@@ -48,11 +48,22 @@
 @keyframes menusAppear {
   0% {
     transform: translateY(-2rem);
+    z-index: 0;
     opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  75% {
+    opacity: 0.65;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+    z-index: 99;
   }
 }
 @keyframes check {
@@ -211,11 +222,11 @@ a {
   background-color: #F3F3F3;
   position: relative;
   top: -5rem;
-  max-width: 1280px;
+  max-width: 1350px;
   width: 100%;
   height: auto;
   margin: auto;
-  padding-bottom: 13rem;
+  padding-bottom: 3rem;
   border-radius: 2rem;
 }
 .Restaurants__name {
@@ -259,7 +270,7 @@ a {
 }
 
 .cardsMenus {
-  margin-top: 2rem;
+  margin-top: 3rem;
   background-color: #F3F3F3;
   padding: 15px 5px;
   display: flex;
@@ -295,10 +306,10 @@ a {
   text-align: left;
   background-color: #FFF;
   box-shadow: 17px 24px 19px 0px rgba(53, 53, 53, 0.21);
-  padding: 5px 10px;
+  padding: 8px 8px;
   margin: 10px 2px;
   height: 50px;
-  width: 20rem;
+  width: 22rem;
 }
 .cards:hover .cards__txt {
   width: 75%;
@@ -314,8 +325,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  width: 3.35rem;
+  height: 3.8rem;
+  width: 3.5rem;
   margin-top: -5px;
   margin-left: 0;
 }
@@ -329,38 +340,41 @@ a {
     width: 3.35rem;
   }
 }
-.cards .cards__txt {
+.cards__txt {
   display: block;
   margin: 4px 2px;
   line-height: 0.5rem;
   width: 88%;
 }
-.cards .cards__txt h3, .cards .cards__txt p {
+.cards__txt p {
+  font-size: 13.5px;
+}
+.cards__txt h3, .cards__txt p {
   margin: 0;
   padding: 8px;
-  font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.cards .cards__txt h3::first-letter, .cards .cards__txt p::first-letter {
+.cards__txt h3::first-letter, .cards__txt p::first-letter {
   text-transform: uppercase;
 }
-.cards .cards__price {
+.cards__price {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   width: 10%;
 }
-.cards .cards__check--btn {
+.cards__check--btn {
   display: none;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   border: 1px solid #99E2D0;
   padding: 0rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 @media (max-width: 376px) {
-  .cards .cards__check--btn {
+  .cards__check--btn {
     width: 25rem;
   }
 }
