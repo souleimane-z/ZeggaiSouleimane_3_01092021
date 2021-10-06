@@ -46,9 +46,7 @@
     height: 4rem;
 
         &:hover{
-            cursor: pointer;
-            opacity: 0.80;
-            box-shadow: $shadows;
-          }
+            @include shadowBTN;
+        }
     }
 }

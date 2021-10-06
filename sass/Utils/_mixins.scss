@@ -14,7 +14,11 @@
 @mixin shrikhand {
     font : 20px "shrikhand", sans-serif;
 }
-
+@mixin shadowBTN {
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: $shadows;
+}
 // animation des menus
 
 @mixin menusAppear($delay) {
