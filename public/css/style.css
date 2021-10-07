@@ -47,7 +47,7 @@
 }
 @keyframes menusAppear {
   0% {
-    transform: translateY(-3rem);
+    transform: translateY(-3rem) scale(0);
     z-index: 0;
     opacity: 0;
   }
@@ -61,7 +61,7 @@
     opacity: 0.65;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     opacity: 1;
     z-index: 99;
   }
