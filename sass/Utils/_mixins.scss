@@ -20,13 +20,11 @@
     box-shadow: $shadows;
 }
 // animation des menus
-
 @mixin menusAppear($delay) {
     animation: menusAppear 3s;
     animation-timing-function: cubic-bezier(.5,1.2,.6,1);
     animation-delay: $delay;
 }
-
 
 
 /*Breakpoints : Responsive*/

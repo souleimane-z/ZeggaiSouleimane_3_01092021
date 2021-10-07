@@ -47,7 +47,7 @@
 }
 @keyframes menusAppear {
   0% {
-    transform: translateY(-2rem);
+    transform: translateY(-3rem);
     z-index: 0;
     opacity: 0;
   }
@@ -409,7 +409,10 @@ a {
   font-weight: 500;
   margin: 40px auto;
   cursor: pointer;
-  font: bold 15px "Roboto-medium";
+  font: 16px "Roboto-medium";
+}
+.order--btn:hover {
+  opacity: 1;
 }
 @media only screen and (min-width: 741px) and (max-width: 1200px) {
   .order {

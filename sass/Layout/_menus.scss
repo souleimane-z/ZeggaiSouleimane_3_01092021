@@ -224,8 +224,13 @@
         font-weight: 500;
         margin: 40px auto;
         cursor: pointer;
-        font: bold 15px "Roboto-medium"
+        font: 16px "Roboto-medium";
+        &:hover{
+            opacity: 1;
+        }
+        
     }
+    
     @include Tablets {
         top: 45rem;
         left: 20rem;
