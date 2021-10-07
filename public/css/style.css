@@ -77,6 +77,16 @@
   }
 }
 /*
+@keyframes menusAppear {
+    0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+*/
+/*
 @keyframes menuAppear {
   0% {
       transform: translateY(-1px) scaleY(2.5) scaleX(0.2);
