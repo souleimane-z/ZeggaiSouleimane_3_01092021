@@ -58,10 +58,6 @@
         padding-bottom: 2rem;
         font-family: "Shrikhand";
         
-        @include Tablets {
-            margin-right: 50px;
-            margin-left: 50px;
-        }
     
             &--icon {
                 position: absolute;
@@ -131,6 +127,10 @@
     margin: 10px 2px;
     height: 50px;
     width: 22rem;
+
+    @include smallPhones {
+        width: 17rem;
+    }
     &:hover {
         .cards__txt {
             width: 75%;
@@ -154,7 +154,7 @@
                 width: 3.35rem;
             }
             @include smallPhones {
-                width: 3.35rem;
+                width: 3rem;
             }
         }
     }
@@ -233,15 +233,27 @@
     
     @include Tablets {
         top: 45rem;
-        left: 20rem;
+        left: 22rem;
     }
     @include Smartphones{
         top: 65rem;
-        left: 8rem;
+        left: 18rem;
+    }
+    @include between {
+        top: 65rem;
+        left: 12rem;
     }
     @include smallPhones{
-        top: 60rem;
-        left: 06rem;
+        top: 63rem;
+        left: 7rem;
+    }
+    @media only screen and (min-width : 420px) and (max-width : 520px)  {
+        
+        left: 10rem;
+    }
+    @media only screen and (min-width : 1128px) and (max-width : 1200px)  {
+        top: 92%;
+        left: 45%;
     }
 }
 

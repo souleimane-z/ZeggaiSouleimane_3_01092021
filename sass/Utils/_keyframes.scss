@@ -35,6 +35,7 @@
   }
 }
 //check btn hover
+
 @keyframes check {
     0% {
     transform: rotate(-360deg);
@@ -44,8 +45,17 @@
     transform: rotate(0deg);
     opacity: 1;
     }
+} 
+@keyframes checkAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) ;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
 
 /*
 @keyframes menusAppear {

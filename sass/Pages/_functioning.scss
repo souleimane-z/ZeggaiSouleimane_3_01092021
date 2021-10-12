@@ -63,6 +63,9 @@
                 width: 290px;
                 margin: 15px;
             }
+            @include smallPhones {
+                width: 90%;
+            }
                 &--number{
                     display: flex;
                     justify-content: center;
@@ -80,6 +83,9 @@
                     }
                     @include Smartphones {
                         right: 1.4rem;
+                    }
+                    @include smallPhones{
+                        right: 1rem;
                     }
 
                 }

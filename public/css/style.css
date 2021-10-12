@@ -76,6 +76,16 @@
     opacity: 1;
   }
 }
+@keyframes checkAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /*
 @keyframes menusAppear {
     0% {
@@ -122,7 +132,7 @@ a {
   color: #FFF;
   padding: 1rem;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .footer {
     margin-top: 6rem;
   }
@@ -164,7 +174,7 @@ a {
   align-items: center;
   flex-basis: 100%;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .header__heading {
     padding: 3px;
   }
@@ -220,7 +230,7 @@ a {
   position: relative;
   height: 32rem;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .header__img {
     height: 20rem;
   }
@@ -245,12 +255,6 @@ a {
   padding-bottom: 2rem;
   font-family: "Shrikhand";
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
-  .Restaurants__name {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-}
 .Restaurants__name--icon {
   position: absolute;
   top: 1.5rem;
@@ -268,12 +272,12 @@ a {
   opacity: 1;
   transition-duration: 500ms;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .Restaurants__name--icon {
     margin-right: 50px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .Restaurants__name--icon {
     margin-left: 90%;
   }
@@ -321,6 +325,11 @@ a {
   height: 50px;
   width: 22rem;
 }
+@media (max-width: 518px) {
+  .cards {
+    width: 17rem;
+  }
+}
 .cards:hover .cards__txt {
   width: 75%;
   overflow: hidden;
@@ -340,14 +349,14 @@ a {
   margin-top: -5px;
   margin-left: 0;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cards:hover .cards__check--btn {
     width: 3.35rem;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 518px) {
   .cards:hover .cards__check--btn {
-    width: 3.35rem;
+    width: 3rem;
   }
 }
 .cards__txt {
@@ -383,7 +392,7 @@ a {
   padding: 0rem;
   font-size: 1.3rem;
 }
-@media (max-width: 376px) {
+@media (max-width: 518px) {
   .cards__check--btn {
     width: 25rem;
   }
@@ -424,26 +433,43 @@ a {
 .order--btn:hover {
   opacity: 1;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .order {
     top: 45rem;
-    left: 20rem;
+    left: 22rem;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .order {
     top: 65rem;
-    left: 8rem;
+    left: 18rem;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 640px) {
   .order {
-    top: 60rem;
-    left: 6rem;
+    top: 65rem;
+    left: 12rem;
+  }
+}
+@media (max-width: 518px) {
+  .order {
+    top: 63rem;
+    left: 7rem;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 520px) {
+  .order {
+    left: 10rem;
+  }
+}
+@media only screen and (min-width: 1128px) and (max-width: 1200px) {
+  .order {
+    top: 92%;
+    left: 45%;
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .Rest-Pres {
     width: 100%;
   }
@@ -460,7 +486,7 @@ a {
   animation: principalLoader 2.5s;
   overflow: hidden;
 }
-@media (max-width: 376px) {
+@media (max-width: 518px) {
   .principalLoader {
     height: 100%;
   }
@@ -481,7 +507,7 @@ a {
   z-index: 30;
   opacity: 0;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .loader {
     left: 30%;
   }
@@ -513,7 +539,11 @@ a {
 }
 
 .fa-check-circle {
-  animation: check 1s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
+  animation: check 2s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
+}
+
+.cards__check--btn {
+  animation: checkAppear 1.5s ease-in-out;
 }
 
 /*
@@ -555,7 +585,7 @@ a {
   flex-flow: row nowrap;
   position: relative;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .functioning .functioning-ul {
     display: flex;
     justify-content: center;
@@ -563,7 +593,7 @@ a {
     flex-flow: column nowrap;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .functioning .functioning-ul {
     display: flex;
     justify-content: center;
@@ -595,19 +625,24 @@ a {
   color: #9356DC;
   filter: brightness(95%);
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices {
     margin: 0;
     width: 300px;
     margin: 15px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .functioning .functioning-ul__choices {
     margin: 0;
     padding: 0;
     width: 290px;
     margin: 15px;
+  }
+}
+@media (max-width: 518px) {
+  .functioning .functioning-ul__choices {
+    width: 90%;
   }
 }
 .functioning .functioning-ul__choices--number {
@@ -623,14 +658,19 @@ a {
   position: relative;
   right: 1rem;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--number {
     right: 2rem;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .functioning .functioning-ul__choices--number {
     right: 1.4rem;
+  }
+}
+@media (max-width: 518px) {
+  .functioning .functioning-ul__choices--number {
+    right: 1rem;
   }
 }
 .functioning .functioning-ul__choices--txt {
@@ -638,14 +678,14 @@ a {
   font: bold 1.2rem "Roboto", sans-serif;
   margin-left: 10px;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--txt {
     margin: 0;
     padding: 0;
     font-size: 16px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .functioning .functioning-ul__choices--txt {
     margin: 0;
     padding: 0 1rem 0 0;
@@ -657,7 +697,7 @@ a {
   font-size: 1.3rem;
   color: gray;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .functioning .functioning-ul__choices--icons {
     padding: 0 20px 0 10px;
     margin: 0;
@@ -677,7 +717,7 @@ a {
   align-items: center;
   font: bold 32px "Roboto-bold", sans-serif;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .header__heading__quote__principal {
     text-align: center;
     font-size: 25px;
@@ -689,7 +729,7 @@ a {
   align-items: center;
   font: 20px "Roboto-Light", sans-serif;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .header__heading__quote > h4 {
     text-align: center;
     font-size: 19px;
@@ -727,7 +767,7 @@ a {
   align-items: center;
   width: 100%;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cardSection {
     display: flex;
     justify-items: center;
@@ -740,7 +780,7 @@ a {
   align-items: center;
   font: bold 30px "Roboto-bold", sans-serif;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cardSection__title {
     justify-content: flex-start;
     margin-left: 7px;
@@ -763,12 +803,12 @@ a {
   box-shadow: 17px 24px 19px 0px rgba(53, 53, 53, 0.21);
   margin: 2.5rem 1rem;
 }
-@media only screen and (min-width: 741px) and (max-width: 1200px) {
+@media only screen and (min-width: 759px) and (max-width: 1200px) {
   .cardSection__cards__Content {
     width: 38rem;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cardSection__cards__Content {
     padding: 0;
     margin: 1rem 0;
@@ -776,10 +816,11 @@ a {
     height: 260px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 518px) {
   .cardSection__cards__Content {
     margin: 1.2rem 0;
-    width: 22rem;
+    width: 18rem;
+    height: 240px;
   }
 }
 .cardSection__cards__Content--new {
@@ -796,14 +837,14 @@ a {
   font-weight: bold;
   border-radius: 3px;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cardSection__cards__Content--new {
     position: absolute;
     z-index: 999;
     right: 4rem;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 518px) {
   .cardSection__cards__Content--new {
     right: 3rem;
   }
@@ -817,10 +858,15 @@ a {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 740px) {
+@media (max-width: 758px) {
   .cardSection__cards__Content--img {
     width: 100%;
     height: 170px;
+  }
+}
+@media (max-width: 518px) {
+  .cardSection__cards__Content--img {
+    height: 150px;
   }
 }
 .cardSection__cards__Content--Name {
