@@ -42,10 +42,13 @@
                 @include Smartphones {
                     padding: 0;
                     margin: 1rem 0;
-                    width: 23rem;
+                    width: 38rem;
                     height: 260px;
                 }
-
+                @include between {
+                    
+                    width: 23rem;
+                }
                 @include smallPhones {
                     margin: 1.2rem 0;
                     width: 18rem;
@@ -69,6 +72,9 @@
                         position: absolute;
                         z-index: 999;
                         right: 4rem;
+                    }
+                    @include between {
+                        right: 20%;
                     }
                     @include smallPhones {
                         right: 3rem;

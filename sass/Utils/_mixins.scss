@@ -30,13 +30,13 @@
 /*Breakpoints : Responsive*/
 
 @mixin Tablets {
-    @media only screen and (min-width : 759px) and (max-width : 1200px) {
+    @media only screen and (min-width : 760px) and (max-width : 1200px) {
         @content;
         }
 }
 
 @mixin Smartphones {
-    @media (max-width: 758px) {
+    @media (max-width: 759px) {
         @content;
         }
 }
