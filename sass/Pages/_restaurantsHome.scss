@@ -76,8 +76,8 @@
                     @include between {
                         right: 20%;
                     }
-                    @include smallPhones {
-                        right: 3rem;
+                    @include verySmall {
+                        right: 15%;
                     }
 
                     }

@@ -854,9 +854,9 @@ a {
     right: 20%;
   }
 }
-@media (max-width: 518px) {
+@media (max-width: 400px) {
   .cardSection__cards__Content--new {
-    right: 3rem;
+    right: 15%;
   }
 }
 .cardSection__cards__Content--img {
