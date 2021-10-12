@@ -40,14 +40,14 @@
         @content;
         }
 }
-@mixin between {
-    @media (max-width:640px){
-        @content
-    }
-}
 
 @mixin smallPhones {
     @media (max-width: 518px) {
+        @content;
+    }
+}
+@mixin between {
+    @media (max-width:640px) {
         @content;
     }
 }
