@@ -202,11 +202,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    text-align: center;
+    /*position: absolute;
     width: 10rem;
-    height: 3rem;
-    top: 25rem;
-    left: 33rem;
+    height: 3rem;*/
     text-align: center;
     border-radius: 2rem;
 
@@ -230,31 +229,7 @@
         }
         
     }
-    
-    @include Tablets {
-        top: 45rem;
-        left: 22rem;
-    }
-    @include Smartphones{
-        top: 65rem;
-        left: 18rem;
-    }
-    @include between {
-        top: 65rem;
-        left: 12rem;
-    }
-    @include smallPhones{
-        top: 63rem;
-        left: 7rem;
-    }
-    @media only screen and (min-width : 420px) and (max-width : 520px)  {
-        
-        left: 10rem;
-    }
-    @media only screen and (min-width : 1128px) and (max-width : 1200px)  {
-        top: 92%;
-        left: 45%;
-    }
+   
 }
 
 .Rest-Pres {

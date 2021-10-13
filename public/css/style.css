@@ -405,11 +405,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  text-align: center;
+  /*position: absolute;
   width: 10rem;
-  height: 3rem;
-  top: 25rem;
-  left: 33rem;
+  height: 3rem;*/
   text-align: center;
   border-radius: 2rem;
 }
@@ -432,41 +431,6 @@ a {
 }
 .order--btn:hover {
   opacity: 1;
-}
-@media only screen and (min-width: 760px) and (max-width: 1200px) {
-  .order {
-    top: 45rem;
-    left: 22rem;
-  }
-}
-@media (max-width: 759px) {
-  .order {
-    top: 65rem;
-    left: 18rem;
-  }
-}
-@media (max-width: 640px) {
-  .order {
-    top: 65rem;
-    left: 12rem;
-  }
-}
-@media (max-width: 518px) {
-  .order {
-    top: 63rem;
-    left: 7rem;
-  }
-}
-@media only screen and (min-width: 420px) and (max-width: 520px) {
-  .order {
-    left: 10rem;
-  }
-}
-@media only screen and (min-width: 1128px) and (max-width: 1200px) {
-  .order {
-    top: 92%;
-    left: 45%;
-  }
 }
 
 @media (max-width: 759px) {
