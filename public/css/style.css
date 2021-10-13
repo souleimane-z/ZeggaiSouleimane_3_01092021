@@ -69,11 +69,9 @@
 @keyframes check {
   0% {
     transform: rotate(-360deg);
-    opacity: 0;
   }
   100% {
     transform: rotate(0deg);
-    opacity: 1;
   }
 }
 @keyframes checkAppear {
@@ -507,10 +505,12 @@ a {
 
 .fa-check-circle {
   animation: check 2s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
+  animation-delay: 0ms;
 }
 
 .cards__check--btn {
-  animation: checkAppear 1s ease-in-out;
+  animation: checkAppear 1s both;
+  animation-delay: 0ms;
 }
 
 /*
