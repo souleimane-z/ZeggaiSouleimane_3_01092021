@@ -504,7 +504,7 @@ a {
 }
 
 .fa-check-circle {
-  animation: check 2s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
+  animation: check 1s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
   animation-delay: 0ms;
 }
 
