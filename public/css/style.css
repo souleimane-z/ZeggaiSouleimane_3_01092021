@@ -290,7 +290,6 @@ a {
 .cardsMenus {
   margin-top: 3rem;
   background-color: #F3F3F3;
-  padding: 15px 5px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -410,10 +409,6 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /*position: absolute;
-  width: 10rem;
-  height: 3rem;*/
-  text-align: center;
   border-radius: 2rem;
 }
 .order--btn {
@@ -504,7 +499,7 @@ a {
 }
 
 .fa-check-circle {
-  animation: check 1.5s cubic-bezier(0.25, 0.46, 0.46, 0.94) both;
+  animation: check 1.5s cubic-bezier(0.3, 0.46, 0.46, 1) both;
   animation-delay: 0ms;
 }
 
