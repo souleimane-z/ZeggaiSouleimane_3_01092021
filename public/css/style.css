@@ -356,7 +356,7 @@ a {
 }
 @media (max-width: 518px) {
   .cards:hover .cards__check--btn {
-    width: 3rem;
+    width: 2.7rem;
   }
 }
 .cards__txt {
@@ -543,7 +543,7 @@ a {
 }
 
 .cards__check--btn {
-  animation: checkAppear 1.5s ease-in-out;
+  animation: checkAppear 1s ease-in-out;
 }
 
 /*
