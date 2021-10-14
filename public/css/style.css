@@ -353,7 +353,7 @@ a {
 }
 @media (max-width: 518px) {
   .cards:hover span {
-    left: 0;
+    left: 1rem;
   }
 }
 .cards:hover .cards__check--btn {
@@ -382,6 +382,8 @@ a {
 }
 .cards:hover .cards__check {
   margin-right: 50px;
+  transition-duration: 1500ms;
+  transition-delay: -1000ms;
 }
 .cards__txt {
   display: block;
@@ -432,10 +434,11 @@ a {
   top: -1rem;
 }
 .cards__check {
-  margin-right: -500px;
+  margin-right: -5000px;
 }
 .cards__check--btn {
   background-color: #99E2D0;
+  animation: 2s ease-in-out;
   border-radius: 0 15px 15px 0;
   border: 2px solid #99E2D0;
   padding: 0rem;
@@ -448,8 +451,8 @@ a {
 }
 .cards__check--btn > i {
   transform: rotate(0deg);
-  transition-duration: 1500ms;
-  transition-delay: -500ms;
+  transition-duration: 2000ms;
+  transition-delay: 0ms;
 }
 .cards .fa-check-circle {
   color: #fff;
