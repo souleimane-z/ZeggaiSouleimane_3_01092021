@@ -174,8 +174,8 @@
         } 
         .cards__check { 
        margin-right: 50px;
-       transition-duration: 1500ms;
-       transition-delay: -1000ms;
+       transition-duration: 1000ms;
+       transition-delay: -100ms;
       }
     }
 
@@ -236,7 +236,7 @@
         >i {
             transform: rotate(0deg);
             transition-duration: 2000ms;
-            transition-delay: 0ms;
+            transition-delay: 500ms;
         }
     }
     .fa-check-circle {
