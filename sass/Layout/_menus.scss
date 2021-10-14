@@ -156,8 +156,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
             height: 5rem;
-            width: 3.45rem;
+            width: 3.5rem;
             margin-left: 0;
             margin-top: -0.35rem;
             padding-left: 0;
@@ -217,13 +218,12 @@
     }
     
     &__check {
-        
-        margin-right: -35px;
+        margin-right: -500px;
     }
     &__check--btn {
         background-color: $color-tertiary;
         border-radius: 0 15px 15px 0;
-        border: 1px solid $color-tertiary;
+        border: 2px solid $color-tertiary;
         padding: 0rem;
         font-size: 1.3rem;
         @include smallPhones {

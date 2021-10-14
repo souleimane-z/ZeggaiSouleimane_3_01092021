@@ -362,7 +362,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 5rem;
-  width: 3.45rem;
+  width: 3.5rem;
   margin-left: 0;
   margin-top: -0.35rem;
   padding-left: 0;
@@ -432,12 +432,12 @@ a {
   top: -1rem;
 }
 .cards__check {
-  margin-right: -35px;
+  margin-right: -500px;
 }
 .cards__check--btn {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  border: 1px solid #99E2D0;
+  border: 2px solid #99E2D0;
   padding: 0rem;
   font-size: 1.3rem;
 }
