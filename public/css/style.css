@@ -448,7 +448,7 @@ a {
 }
 .cards__check--btn > i {
   transform: rotate(0deg);
-  transition-duration: 2s;
+  transition-duration: 2500ms;
   transition-delay: -500ms;
 }
 .cards .fa-check-circle {
