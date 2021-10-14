@@ -167,6 +167,9 @@
             @include smallPhones {
                 width: 3.1rem;
             }
+            >i {
+                transform: rotate(360deg);
+            }
         } 
         .cards__check { 
        margin-right: 50px;
@@ -225,6 +228,11 @@
         font-size: 1.3rem;
         @include smallPhones {
             width: 25rem;
+        }
+        >i {
+            transform: rotate(0deg);
+            transition-duration: 2s;
+            transition-delay: -500ms;
         }
     }
     .fa-check-circle {

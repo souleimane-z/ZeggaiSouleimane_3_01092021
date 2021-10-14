@@ -66,30 +66,32 @@
     z-index: 99;
   }
 }
+/*
 @keyframes check {
   0% {
-    transform: rotate(-360deg);
+  transform: rotate(0);
   }
   100% {
-    transform: rotate(0deg);
+  transform: rotate(360deg);
   }
 }
 @keyframes checkAppear {
-  0% {
-    opacity: 0;
-    display: none;
-    transform: translateX(50px);
-  }
-  40% {
-    opacity: 0;
-    display: none;
-  }
-  100% {
-    opacity: 1;
-    display: flex;
-    transform: translateX(0);
-  }
+0% {
+  opacity: 0;
+  display: none;
+  transform: translateX(50px);
 }
+40%{
+  opacity: 0;
+  display: none;
+}
+100%{
+  opacity: 1;
+  display: flex;
+  transform: translateX(0);
+}
+}
+*/
 @keyframes menusAppear {
   0% {
     transform: scale(0);
@@ -375,6 +377,9 @@ a {
     width: 3.1rem;
   }
 }
+.cards:hover .cards__check--btn > i {
+  transform: rotate(360deg);
+}
 .cards:hover .cards__check {
   margin-right: 50px;
 }
@@ -440,6 +445,11 @@ a {
   .cards__check--btn {
     width: 25rem;
   }
+}
+.cards__check--btn > i {
+  transform: rotate(0deg);
+  transition-duration: 2s;
+  transition-delay: -500ms;
 }
 .cards .fa-check-circle {
   color: #fff;
@@ -539,16 +549,11 @@ a {
   animation-delay: 1.3s;
 }
 
-.fa-check-circle {
-  animation: check 3s cubic-bezier(0.3, 0.46, 0.46, 1) both;
-  animation-delay: 0ms;
+/*
+.cards__check > .cards__check--btn > .fa-check-circle {
+    animation: check 3s both;
 }
-
-.cards__check--btn {
-  animation: checkAppear 2s both;
-  animation-delay: 0ms;
-}
-
+*/
 /*
 .cards {
 

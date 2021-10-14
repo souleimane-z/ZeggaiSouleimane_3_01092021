@@ -53,16 +53,11 @@
 
 
   // check btn hover
-
-  .fa-check-circle {
-    animation: check 3s cubic-bezier(0.300, 0.460, 0.460, 1) both;
-    animation-delay: 0ms;
+/*
+.cards__check > .cards__check--btn > .fa-check-circle {
+    animation: check 3s both;
 }
-.cards__check--btn {
-    animation: checkAppear 2s both;
-    animation-delay: 0ms;
-}
-
+*/
 /*
 .cards {
     
